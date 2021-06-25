@@ -1,10 +1,11 @@
 ---
-title: Mr. Robot CTF
-author: Luka Piplica
+title: "Mr. Robot CTF"
 date: 2021-05-23 12:32:00 +0800
-categories: [TryHackMe]
-tags: [Mr. Robot, TryHackMe, CTF]
-pin: true
+categories:
+  - Tryhackme
+tags:
+  - Tryhackme
+  - Mr Robot
 ---
 
 
@@ -20,7 +21,7 @@ pin: true
 
 ## Hvala na posjeti!
 
-<img src="/assets/img/.assets/mrrobotctf/mrrobot1.png" alt="img" align="right" width="400px">
+<img src="/assets/images/mrrobotctf/mrrobot1.png" alt="img" align="right" width="400px">
 
 Da li možemo hakovati Mr Robot CTF ? Ova virtualna mašina je **srednje** težine i naučit će nas mnogo korisnih stvari.
 
@@ -170,13 +171,13 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       + Ulazak na stranicu **Ukucajte dobivenu IP adresu u vaš web preglednik**:
 
       <p align="center">
-         <img width="75%" src="/assets/img/.assets/mrrobotctf/ss1.png" />
+         <img width="75%" src="/assets/images/mrrobotctf/ss1.png" />
       </p>
 
       + Ali ako ukucamo u naš link **/robots.txt (IP_ADRESA/robots.txt)** možemo vidjeti da nam izbaci prvi ključ, koji se nalazi u .txt formatu. 
       
       <p align="center">
-         <img width="75%" src="/assets/img/.assets/mrrobotctf/ss2.png" />
+         <img width="75%" src="/assets/images/mrrobotctf/ss2.png" />
       </p>
 
       - Pronašli smo dva fajla jedan **fsocity.dic i key-1-of-3.txt**. Prvi fajl nam je izgleda dictionary (riječnik) fajl.
@@ -266,13 +267,13 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
    + Nakon prijave na stranici odmah u donjem lijevom uglu možemo vidjeti da je verzija wordpress-a `4.3.1`. Ovo je stara verzija wordpress-a.
 
       <p align="center">
-         <img width="75%" src="/assets/img/.assets/mrrobotctf/ss3.png" />
+         <img width="75%" src="/assets/images/mrrobotctf/ss3.png" />
       </p>
 
    + Pronalazimo dva korisnika od kojih Elliot (mi) smo administrator.
 
       <p align="center">
-         <img width="75%" src="/assets/img/.assets/mrrobotctf/ss4.png" />
+         <img width="75%" src="/assets/images/mrrobotctf/ss4.png" />
       </p>
 
    + Kao što sam rekao možemo vidjeti da je ova stara verzija wordpress-a ranjiva **PHP reverse shell-ovima.** [**LINK OVE SKRIPTE**](https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php)
@@ -280,13 +281,13 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
    + Pošto smo administrator potrebno je da odemo u Appearance. 
 
       <p align="center">
-         <img width="75%" src="/assets/img/.assets/mrrobotctf/ss5.png" />
+         <img width="75%" src="/assets/images/mrrobotctf/ss5.png" />
       </p>
 
    + A nakon toga idemo u Editor i zamjenimo kod sa skriptom za 404 PHP template iz linka gore. 
 
       <p align="center">
-         <img width="75%" src="/assets/img/.assets/mrrobotctf/ss6.png" />
+         <img width="75%" src="/assets/images/mrrobotctf/ss6.png" />
       </p>
 
       **NAPOMENA:** Obratiti pažnju na ip adresu u kodu tu nam ide lokalna IP adresa tj. IP adresa našeg računara. Lokalnu IP Adresu možemo provjeriti sa `ifconfig`. 
@@ -300,7 +301,7 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
    + Nakon toga moramo otići na **http:IP_ADRESA/404.php** ovaj link u web pretraživaču. 
 
       <p align="center">
-         <img width="75%" src="/assets/img/.assets/mrrobotctf/ss7.png" />
+         <img width="75%" src="/assets/images/mrrobotctf/ss7.png" />
       </p>
 
       Kao što vidimo otvorili smo shell u terminalu. Netcat je dobio konekciju. 
