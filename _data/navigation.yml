@@ -1,9 +1,9 @@
 main:
-  - title: "Posts"
+  - title: "Objave"
     url: /posts/
-  - title: "Categories"
+  - title: "Kategorije"
     url: /categories/
-  - title: "Tags"
+  - title: "Tagovi"
     url: /tags/
-  - title: "About"
+  - title: "O meni"
     url: /about/
