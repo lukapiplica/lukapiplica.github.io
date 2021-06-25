@@ -1,6 +1,6 @@
 ---
 title: "Objave po kategorijama"
 layout: categories
-permalink: /categories/
+permalink: /kategorije/
 author_profile: true
 ---
