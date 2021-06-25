@@ -6,7 +6,7 @@ title: "O Meni"
 
 
 <p align="center">
-  <img width="50%" src="/assets/img/.assets/about/logo.png" />
+  <img width="50%" src="/assets/images/about/logo.png" />
 </p>
 
 <p align="center">
@@ -40,7 +40,7 @@ Završio sam [Željeznički školski centar](https://zsc.edu.ba/) sa zvanjem ele
    Tokom druge godine sam imao priliku da sa grupom kolega iz razreda radimo na projektu "Arduino Scoreboard", koje nam je donijelo osvojeno prvo mjesto na državnome takmičenju (IX Festival rada) u Hadžičima. 
 
    <p align="center">
-      <img width="75%" src="/assets/img/.assets/about/scoreboard.jpg" />
+      <img width="75%" src="/assets/images/about/scoreboard.jpg" />
    </p>
 
    + Arduino Scoreboard (semafor) je napravljen pomoću Arduino mikrokontrolera, i WiFi modula    koji nam uspostavlja konekciju sa HTML web stranicom (koju možete vidjeti na laptopu) i pomoću nje kontrolišemo brojeve i vrijeme na semaforu. Brojevi su ručno napravljeni od LED trake koja nam predstavlja sedmosegmentne displeje. 
@@ -51,13 +51,13 @@ Završio sam [Željeznički školski centar](https://zsc.edu.ba/) sa zvanjem ele
    Tokom treće godine naučio sam praviti vlastite PCB ploče kao i napredno znanje o tranzistorima. Na završnome radu iz prakse imao sam priliku da radim na projektu audio pojačala. 
 
    <p align="center">
-      <img width="50%" src="/assets/img/.assets/about/audio.jpg" />
+      <img width="50%" src="/assets/images/about/audio.jpg" />
    </p>
    
    Kao i prethodne godine sudjelovali smo na X Festivalu rada koji je bio održan u Zenici. Kao projekat smo imali solarno drvo koje nam je donijelo prvo mjesto.
 
    <p align="center">
-      <img width="50%" src="/assets/img/.assets/about/solarno.jpg" />
+      <img width="50%" src="/assets/images/about/solarno.jpg" />
    </p>
 
 
@@ -66,7 +66,7 @@ Završio sam [Željeznički školski centar](https://zsc.edu.ba/) sa zvanjem ele
    Završne godine sam najviše stekao znanja iz telekomunikacija, gdje sam za završni rad imao temu o radio prijemnicima. Projekat koji smo radili za XI Festival rada je LED stol isprogramiran Arduino mikrokontrolerom. 
 
    <p align="center">
-      <img width="75%" src="/assets/img/.assets/about/ledtable.jpg" />
+      <img width="75%" src="/assets/images/about/ledtable.jpg" />
    </p>
    
    Ovaj projekat nam je donio treću godinu zaredom prvo mjesto. 
@@ -77,7 +77,7 @@ Završio sam [Željeznički školski centar](https://zsc.edu.ba/) sa zvanjem ele
 Nakon završene srednje škole, odlučio sam da svoje znanje o informacionim tehnologijama nastavim na ITAkademiji smjeru mrežne administracije. Konkretno CCNA (Cisco Certified Network Administrator) pripremu, gdje sam naučio postavljati i konfigurisati mnoge mrežne uređaje, kao i napredno znanje u korištenju Windows Server i Linux operativnih sistema. Nakon završene ITAkademije, odlučio sam da svoje trenutno znanje proširim u sektoru cyber sigurnosti. Trenutno sam prvi u BiH na TryHackMe tabeli. 
 
 <p align="center">
-   <img width="75%" src="/assets/img/.assets/about/thm.png" />
+   <img width="75%" src="/assets/images/about/thm.png" />
 </p>
 
 
