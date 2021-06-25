@@ -59,7 +59,7 @@ plugins:
 author:
   name   : "Luka Piplica"
   avatar : "/assets/images/about/profile.jpg"
-  bio    : "Cybersecurity, elektronics and sys administration"
+  bio    : "Cybersecurity, electronics and network administration."
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
