@@ -11,7 +11,7 @@ tags:
 
 
 <p align="center">
-  <img width="50%" src="/assets/img/.assets/mrrobotctf/mrrobot.gif" />
+  <img width="50%" src="/assets/images/mrrobotctf/mrrobot.gif" />
 </p>
 
 <p align="center">
