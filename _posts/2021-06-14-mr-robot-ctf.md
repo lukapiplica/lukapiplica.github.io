@@ -171,13 +171,13 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       + Ulazak na stranicu **Ukucajte dobivenu IP adresu u vaš web preglednik**:
 
       <p align="center">
-         <img width="75%" src="/assets/images/mrrobotctf/ss1.png" />
+         <img width="100%" src="/assets/images/mrrobotctf/ss1.png" />
       </p>
 
       + Ali ako ukucamo u naš link **/robots.txt (IP_ADRESA/robots.txt)** možemo vidjeti da nam izbaci prvi ključ, koji se nalazi u .txt formatu. 
       
       <p align="center">
-         <img width="75%" src="/assets/images/mrrobotctf/ss2.png" />
+         <img width="100%" src="/assets/images/mrrobotctf/ss2.png" />
       </p>
 
       - Pronašli smo dva fajla jedan **fsocity.dic i key-1-of-3.txt**. Prvi fajl nam je izgleda dictionary (riječnik) fajl.
@@ -267,13 +267,13 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
    + Nakon prijave na stranici odmah u donjem lijevom uglu možemo vidjeti da je verzija wordpress-a `4.3.1`. Ovo je stara verzija wordpress-a.
 
       <p align="center">
-         <img width="75%" src="/assets/images/mrrobotctf/ss3.png" />
+         <img width="100%" src="/assets/images/mrrobotctf/ss3.png" />
       </p>
 
    + Pronalazimo dva korisnika od kojih Elliot (mi) smo administrator.
 
       <p align="center">
-         <img width="75%" src="/assets/images/mrrobotctf/ss4.png" />
+         <img width="100%" src="/assets/images/mrrobotctf/ss4.png" />
       </p>
 
    + Kao što sam rekao možemo vidjeti da je ova stara verzija wordpress-a ranjiva **PHP reverse shell-ovima.** [**LINK OVE SKRIPTE**](https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php)
@@ -281,13 +281,13 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
    + Pošto smo administrator potrebno je da odemo u Appearance. 
 
       <p align="center">
-         <img width="75%" src="/assets/images/mrrobotctf/ss5.png" />
+         <img width="100%" src="/assets/images/mrrobotctf/ss5.png" />
       </p>
 
    + A nakon toga idemo u Editor i zamjenimo kod sa skriptom za 404 PHP template iz linka gore. 
 
       <p align="center">
-         <img width="75%" src="/assets/images/mrrobotctf/ss6.png" />
+         <img width="100%" src="/assets/images/mrrobotctf/ss6.png" />
       </p>
 
       **NAPOMENA:** Obratiti pažnju na ip adresu u kodu tu nam ide lokalna IP adresa tj. IP adresa našeg računara. Lokalnu IP Adresu možemo provjeriti sa `ifconfig`. 
@@ -298,10 +298,10 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       nc -nlvp 1234
       ```
 
-   + Nakon toga moramo otići na **http:IP_ADRESA/404.php** ovaj link u web pretraživaču. 
+   + Nakon toga moramo otići na **http://IP_ADRESA/404.php** ovaj link u web pretraživaču. 
 
       <p align="center">
-         <img width="75%" src="/assets/images/mrrobotctf/ss7.png" />
+         <img width="100%" src="/assets/images/mrrobotctf/ss7.png" />
       </p>
 
       Kao što vidimo otvorili smo shell u terminalu. Netcat je dobio konekciju. 
