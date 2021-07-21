@@ -11,7 +11,7 @@ tags:
 
 
 <p align="center">
-  <img width="50%" src="/assets/images/pegasus/nso.png" />
+  <img width="75%" src="/assets/images/pegasus/nso.png" />
 </p>
 
 <p align="center">
