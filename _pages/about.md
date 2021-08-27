@@ -37,7 +37,7 @@ Završio sam [Željeznički školski centar](https://zsc.edu.ba/) sa zvanjem ele
 
 2. **Druga godina:**
 
-   Tokom druge godine sam imao priliku da sa grupom kolega iz razreda radimo na projektu "Arduino Scoreboard", koje nam je donijelo osvojeno prvo mjesto na državnome takmičenju (IX Festival rada) u Hadžičima. 
+   Tokom druge godine sam imao priliku da sa grupom kolega iz razreda radimo na projektu "Arduino Scoreboard", koje nam je donijelo osvojeno prvo mjesto na državnome takmičenju (IX Festival rada) u Hadžićima. 
 
    <p align="center">
       <img width="75%" src="/assets/images/about/scoreboard.jpg" />
