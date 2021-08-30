@@ -13,7 +13,7 @@ tags:
 
 
 <p align="center">
-  <img width="100%" src="/assets/images/google.gif" />
+  <img width="100%" src="/assets/images/digitalnapriv/google.gif" />
 </p>
 
 <p align="center">
