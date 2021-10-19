@@ -14,10 +14,6 @@ tags:
   <img width="50%" src="/assets/images/gnomenord/gif2.gif" />
 </p>
 
-<p align="center">
-  <img width="50%" src="/assets/images/gnomenord/gif1.gif" />
-</p>
-
 
 <p align="center">
   <b>👋 GNOME goes NORD konfiguracijski fajlovi 👋</b>
@@ -27,7 +23,8 @@ tags:
 
 ### Hvala na posjeti!
 
-<img src="assets/images/gnomenord/edited2.png" alt="img" align="center" width="400px">
+<img src="/assets/images/gnomenord/edited2.png" alt="img" align="center" width="400px">
+<img src="/assets/images/gnomenord/edited.png" alt="img" align="center" width="400px">
 
 Ovo su moji trenutni dotfile-ovi Pop! OS Linux distribucije.
 
