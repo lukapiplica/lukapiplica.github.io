@@ -119,11 +119,14 @@ Postoji mnogo aplikacija za privatnost, ja ću nabrojati nekoliko, a ostale mož
 
 ## Korisni linkovi
 
++ [EFF](https://www.eff.org/)
+
 + [r/privacy](https://www.reddit.com/r/privacy/)
 
 + [r/privacytoolsio](https://www.reddit.com/r/privacytoolsIO/)
 
 + [r/degoogle](https://www.reddit.com/r/degoogle/)
+
 
 ## Zaključak
 
