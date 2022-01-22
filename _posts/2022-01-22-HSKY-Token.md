@@ -51,14 +51,14 @@ Prva stvar koju moramo uraditi je napraviti neku virtualnu mašinu, a zatim inst
 
 Nakon instalacije Debian-a prvu stvar što trebate je updejtovati sistem. 
 
-1. Updejtovanje **Debian-a**: 
+## Updejtovanje **Debian-a**: 
 
    ```shell
    sudo apt update
    sudo apt upgrade
    ```
 
-2. Instalacija **Solaninog alata**:
+## Instalacija **Solaninog alata**:
 
      ```shell 
      sh -c "$(curl -sSfL https://release.solana.com/v1.8.5/install)"
@@ -66,7 +66,7 @@ Nakon instalacije Debian-a prvu stvar što trebate je updejtovati sistem.
      
     Zatim ukucati **exit** i ponovno se logovati u CLI.
 
-3. Pravljenje **Crypto Wallet-a**:
+## Pravljenje **Crypto Wallet-a**:
 
     ```shell
      solana-keygen new
@@ -80,7 +80,7 @@ Nakon instalacije Debian-a prvu stvar što trebate je updejtovati sistem.
   <img width="100%" src="/assets/images/hsky/4.png" />
 </p>
 
-4. Kupovina Solana-e.
+## Kupovina Solana-e.
 
 Da bismo napravili naš token, moramo kupiti Solane. Moja preporuka je Binance.
 
@@ -88,7 +88,7 @@ Da bismo napravili naš token, moramo kupiti Solane. Moja preporuka je Binance.
   <img width="100%" src="/assets/images/hsky/6.png" />
 </p>
 
-5. Prebacivanje Solana-e:
+## Prebacivanje Solana-e:
 
 Nakon što kupimo Solana-u, ona trenutno stoji na Binance-u. Moramo je prebaciti u wallet na virtualnoj mašini. 
 
@@ -104,7 +104,7 @@ Nakon što prebacimo Solana-u, da bi mogli vidjeti koliko imamo Solana-e u CLI k
  solana balance
 ```
 
-6. Instalacija **Rust-a**:
+## Instalacija **Rust-a**:
 
 ```shell
  curl https://sh.rustup.rs -sSf | sh
@@ -117,25 +117,25 @@ Nakon što kliknemo enter, pritisnuti 1 za default instalaciju.
 
 Ukucati **exit** i ponovno se prijaviti na virtualnu mašinu.
 
-7. Instalacija potrebnih paketa:
+## Instalacija potrebnih paketa:
 
 ```shell
  sudo apt install libudev-dev libssl-dev pkg-config build-essential
 ```
 
-8. Instalacija **SPL-a**:
+## Instalacija **SPL-a**:
 
 ```shell
  cargo install spl-token-cli
 ```
 
-9. Pravljenje kripto token-a:
+## Pravljenje kripto token-a:
 
 ```shell
  spl-token create-token
 ```
 
-10. Pravljenje account-a koji će čuvati naš token. 
+## Pravljenje account-a koji će čuvati naš token. 
 
 ```shell
  spl-token create-account *TOKEN ID*
@@ -146,7 +146,7 @@ Ukucati **exit** i ponovno se prijaviti na virtualnu mašinu.
   <img width="100%" src="/assets/images/hsky/14.png" />
 </p>
 
-11. Mintovanje token-a i dodavanje količine vašeg token-a.
+## Mintovanje token-a i dodavanje količine vašeg token-a.
 
 ```shell
  spl-token mint *PRVI TOKEN ID* *BROJ KOLIČINE (KOLIKO ŽELITE VAŠIH TOKEN-A UKUPNO)* *DRUGI TOKEN ID OD ACCOUNT-A*
@@ -158,7 +158,7 @@ Ukucati **exit** i ponovno se prijaviti na virtualnu mašinu.
 
 Uspješno ste napravili vaš token. 
 
-12. Prebacivanje Token-a drugima. 
+## Prebacivanje Token-a drugima. 
 
 Da bismo prebacili vaš token drugima, moraju prvo napraviti wallet ili na telefonu ili u webbrowser-u. Ako pravite wallet na telefonu onda Solflare je odličan wallet, a ako pravite wallet u web pretraživaču onda Phantom Wallet. 
 
@@ -169,7 +169,7 @@ Da bismo prebacili vaš token drugima, moraju prvo napraviti wallet ili na telef
   <img width="100%" src="/assets/images/hsky/16.png" />
 </p>
 
-13. [Solscan](https://solscan.io/) stranica
+## [Solscan](https://solscan.io/) stranica
 
 Da bi provjerili naš token, možemo zalijepiti prvi TOKEN ID na ovoj stranici. 
 
@@ -177,7 +177,7 @@ Da bi provjerili naš token, možemo zalijepiti prvi TOKEN ID na ovoj stranici.
   <img width="100%" src="/assets/images/hsky/17.png" />
 </p>
 
-14. Dodavanje Token-a u Solana registry: 
+## Dodavanje Token-a u Solana registry: 
 
 + Napraviti sliku za vaš token, mora biti manja od 200kb
 + Napraviti Github Account
@@ -214,7 +214,7 @@ Da bi provjerili naš token, možemo zalijepiti prvi TOKEN ID na ovoj stranici.
 
 + Uraditi merge i sačekati da taj proces završi. Solana svakih sat vremena radi provjeru tako da moguće je da vaš pull request bude primljen tek nakon sat vremena. 
 
-15. Finalni produkt: 
+## Finalni produkt: 
 
 <p align="center">
   <img width="100%" src="/assets/images/hsky/22.png" />
