@@ -1,11 +1,11 @@
 ---
-title: "Digitalna privatnost"
+title: "Digital privacy"
 date: 2021-08-30 12:32:00 +0800
 categories:
-  - Privatnost
+  - Privacy
 tags:
-  - privatnost
-  - digitalna privatnost
+  - privacy
+  - digital privacy
   - FSF
   - FOSS
 ---
@@ -17,107 +17,105 @@ tags:
 </p>
 
 <p align="center">
-  <b>👋 Digitalna privatnost 👋</b>
+  <b>👋 Digital privacy 👋</b>
 </p>
 
 
-## Uvod u digitalnu privatnost !
+## Introduction to digital privacy !
 
 
-Već duže vrijeme znamo da velike kompanije kao Google i Facebook špiuniraju nad njihovim korisnicima. Svaku sliko što uslikate i spremite na Google Drive ili Google Fotografije, kao i objavite na društvene mreže ostaju zauvijek iako vi mislite da ste izbrisali te slike.
+We know that big companies like Google and Facebook have been spying on their users for a long time. Any image you take and save on Google Drive or Google Photos and post to social media remains forever even though you think you deleted those images.
 
- Da li bi vama bilo neugodno da znate da vam netko ima pristup vašoj galeriji na telefonu i svim vašim podatcima uključujući poruke, geolokaciju itd. ? 
-
-
-## Zašto je bitna digitalna privatnost ?
-
-Digitalna privatnost je bitna jer time vi imate kontrolu nad **vašim** podatcima, a naravno tako i dobijate pravo na vaše mišljenje. Ovaj primjer možemo vidjeti sa Facebook-om koji je 2016. godine imao utjecaj na izborima, tako što je od određenog kandidata forsirao korisnicima reklame, samim time to je utjecalo na mišljenje mnogih korisnika. 
-
-Relevantnost informacija, ako želite da saznate nešto novo ili da pročitate, vjerovtno će te potražiti informaciju na Google-u, a zatim ući u neku web stranicu. Nažalost mnogo stranica danas je prepuno informacija koje uopšte nisu potrebne (reklama). Najbolji primjer je ako želim da potražim recept na internetu, trebat će nekoliko sekundi da se ta stranica učita. Ako izmjerimo potrošimo otprilike 100 Mb na stranicu od kojih je 20 Mb relevantno (ono što sam pretražio). 
-
-Sve ovo je povezano jer ove velike kompanije prodaju vaše podatke drugim-a i pomoću toga vi ste žrtva ciljanih reklama u smislu da ako nešto napišete vašem prijatelju preko Messenger-a, Viber-a, WhatsApp-a itd. dobivat ćete reklame o tome što ste napisali. 
+Would you be embarrassed to know that someone has access to your gallery on your phone and all your data, including messages, geolocation, etc.?
 
 
-## Kako poboljšati digitalnu privatnost ? 
+## Why digital privacy is important ?
 
-Prvo se moramo zapitati na kojem nivou vi želite vašu privatnost ? Zatim nakon što to odlučimo, možemo započeti sa svim ostalim stvarima. Krenut ćemo od **računara i laptopa**.
+Digital privacy is important because you have control over ** your ** data, and of course, you get the right to your opinion. We can see this example with Facebook, which impacted the 2016 elections by forcing users to advertise for a particular candidate, thus influencing the opinion of many users. 
 
-## Digitalna privatnost na računarima i laptopima.
+Relevance of information, if you want to learn something new or read, you will probably search for information on Google and then enter a website. Unfortunately, many pages today are full of information that is not needed (advertising). The best example is if I want to search for a recipe on the internet, it will take a few seconds for that page to load. If we measure, we spend approximately 100 Mb per page, of which 20 Mb is relevant (what I searched for).
 
-1. **Operativni sistem**:
+ All this is connected because these big companies sell your data to others. With that, you are a victim of targeted advertisements in the sense that if you write something to your friend via Messenger, Viber, WhatsApp, etc., you will receive promotions about what you have written.
 
-   Kao što već znamo Windows sistemi su puni špiunaže i ne potrebnih aplikacija koje dođu nakon instalacije. MacOS sistemi su bili sasvim ok dok Apple nije uveo skeniranje vaše galerije na iCloud-u.
 
-   **Trenutno najbolji operativni sistem za privatnost je GNU/Linux.**
+## How to improve digital privacy ? 
 
-   + [Ubuntu](https://ubuntu.com/) distribucija je veoma lagana za početnike, ali imajte u podsvjesti da su imali skandal prije nekoliko godina gdje su slali neke informacije Amazonu, ali trenutno možete tu opciju izgasiti u postavkama.
+We must first ask ourselves, at what level do you want your privacy? Then once we decide that, we can start with all the other things. We will begin with **computers and laptops**.
 
-   + Ako prelazite sa Windows operativnog sistema, jako dobra distribucija je [Linux Mint](https://linuxmint.com/)
+## Digital privacy on computers and laptops.
 
-   + Ako želite privatnost na maximalnom nivou, onda imate opciju između [Artix GNU/Linux-a](https://artixlinux.org/) i [Debian GNU/Linux-a](https://www.debian.org/). Ova dva sistema su odlična, ali nisu preporučljiva novim korisnicima ! 
+1. **Operating systems**:
 
-   + Ako želite maksimalnu privatnost i sigurnost, trenutno najbolji operativni sistem je [QubesOS](https://www.qubes-os.org/), ali problem Qubes-a je što ovaj sistem zahtjeva minimalno 32 GB RAM memorije kao i jači procesor, jer ovaj sistem je napravljen da sve što pokrenete, pokreće se u novoj virtualnoj mašini koja je izolovana od svega ostalog. Što se tiče privatnosti i sigurnosti sistem je bolji čak od gore navedenih, ali zahtjeva jak računar.  
+   As we already know, Windows systems are full of spying and unnecessary applications after installation. macOS systems were quite ok until Apple introduced scanning your gallery on iCloud.
 
-   + [Whonix](https://www.whonix.org/) distribucija orijentisana ka privatnosti, a koristi TOR protokol.
+   **Currently, the best operating system for privacy is GNU/Linux.**
 
-   + [TailsOS](https://tails.boum.org/) sličan način rada kao Whonix samo što Tails je namijenjen da se koristi preko Live USB-a, što znači da se ne instalira. 
+   + [Ubuntu](https://ubuntu.com/) distribution is very easy for beginners, but keep in mind that they had a scandal a few years ago where they sent some information to Amazon, but right now, you can turn that option off in settings.
 
-2. **Web preglednik**:
+   + If you are switching from the Windows operating system, this distribution is perfect [Linux Mint](https://linuxmint.com/)
 
-   + [Firefox](https://www.mozilla.org/en-US/firefox/new/?redirect_source=firefox-com) je jedan od najboljih web pretraživača za privatnost, potrebno je podesiti nekoliko postavkih za maksimalnu privatnost, možete kliknuti na [link](https://www.privacytools.io/browsers/#about_config) da vidite postavke.
+   + If you want maximum privacy, then you have the option between [Artix GNU/Linux](https://artixlinux.org/) and [Debian GNU/Linux](https://www.debian.org/). These two systems are great but not recommended for new users!! 
+
+   + If you want maximum privacy and security, the best operating system is [QubesOS](https://www.qubes-os.org/). Still, the problem with Qubes is that this system requires a minimum of 32 GB of RAM and a more powerful processor. This system is designed to run everything you run in a new virtual machine isolated from everything else. The system is even better than the above, but it requires a strong computer in terms of privacy and security.
+
+   + [Whonix](https://www.whonix.org/) privacy-oriented distribution, using the TOR protocol.
+
+   + [TailsOS](https://tails.boum.org/) similar to Whonix only Tails is intended to be used via Live USB, which means it is not installed.
+
+2. **Web browser**:
+
+   + [Firefox](https://www.mozilla.org/en-US/firefox/new/?redirect_source=firefox-com) It is one of the best web browsers for privacy; you need to adjust a few settings for maximum privacy; you can click on the [link](https://www.privacytools.io/browsers/#about_config) to see the what settings to change.
    
-   + [Tor Browser](https://www.torproject.org/) iako se Tor najviše koristi za ulazak u Deep Web, veoma je siguran što se tiče privatnosti. 
+   + [Tor Browser](https://www.torproject.org/) although Tor is mainly used to access the Deep Web, it is very secure regarding privacy.
 
-3. **Dodatci web preglednik**:
+3. **Browser add-ons**:
 
-   + [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) ovaj dodatak je "adblocker" i služi za blokiranje reklama. 
+   + [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/) this plugin is an "adblocker" and serves to block ads.
 
-   + [HTTPS Everywhere](https://www.eff.org/https-everywhere) ovaj dodatak forsira sve web stranice da koriste HTTPS protokol. 
+   + [ClearURLs](https://gitlab.com/KevinRoebert/ClearUrls) a handy plugin that extracts the original link from short links (adfly, bitly, etc.).
 
-   + [ClearURLs](https://gitlab.com/KevinRoebert/ClearUrls) veoma koristan dodatak koji izvlači originalni link od skraćenih linkova (adfly, bitly itd.).
+   + [Firefox Multi-Account Containers](https://support.mozilla.org/en-US/kb/containers) made for firefox, and works by opening each new tab in separate, isolated container
+   .
+4. **Search engine**:
 
-   + [Firefox Multi-Account Containers](https://support.mozilla.org/en-US/kb/containers) napravljen od firefox-a, a radi tako što svaku novu karticu otvori u posebnom izolovanom kontejneru.
-
-4. **Pretraživači**:
-
-   + [DuckDuckGo](https://duckduckgo.com) trenutno najbolji pretraživač orijentisan ka privatnosti.
+   + [DuckDuckGo](https://duckduckgo.com) currently the best privacy-oriented search engine.
 
 
-## Digitalna privatnost na mobitelima.
+## Digital privacy on mobile phones.
 
-Digitalnu privatnost na mobitelu je veoma teško postići jer su ovi uređaji napravljeni za špiuniranje korisnika. Postoje nekoliko Android ROM-ova koji su odlični za privatnost ali većina ih zahtjeva Google Pixel mobitel. **NAPOMENA**: Obratite pažnju na koji sistem birate i koje uređaje on podržava, kao i trebaju li vam Google aplikacije !
+Digital privacy on mobile phones is complicated because these devices are made to spy on users. A few Android ROMs are great for privacy, but most require a Google Pixel cell phone. **NOTE**: Pay attention to which system you choose and which devices it supports, and whether you need Google applications!
 
-   1. **Android ROM-ovi**:
+   1. **Android ROMs**:
 
-      + [CalyxOS](https://calyxos.org/) jako dobra zamjena za GrapheneOS, korisnicima kojima su potrebne Google Aplikacije jer ovaj sistem podržava microG servis koji je zamjena za Google Play servise, a microG šalje veoma malo podataka Google-u. **Podržava samo Google Pixel telefone.** 
+      + [CalyxOS](https://calyxos.org/) an excellent replacement for GrapheneOS, users who need Google Apps, this system supports microG service, which is a replacement for Google Play services, and microG sends very little data to Google. **Supports Google Pixel phones only.**
 
-      + [GrapheneOS](https://grapheneos.org/) najbolji sistem za privatnost i ne podržava microG servis što znači da ako vam je potrebna aplikcija sa Play Store-a ne možete je instalirati. **Podržava samo Google Pixel telefone.** 
+      + [GrapheneOS](https://grapheneos.org/) best privacy system and does not support microG service, which means that if you need an app from the Play Store, you can't install it. **Supports Google Pixel phones only.**
 
-      + [LineageOS](https://www.lineageos.org/) odličan sistem za privatnost, no pošto nakon otključavanja bootloader-a, ne može se zaključati što znači da ako vam netko ukrade telefon onda se sve informacije mogu izvući jer otključanim bootloader-om telefon gubi enkripciju. Prednost je što ovaj sistem podržava microG servis koji vi možete birati hoćete li ili ne, također **podržava mnogo više uređaja od Xiaomi-a do Samsung-a.**
+      + [LineageOS](https://www.lineageos.org/) Great privacy system, but after unlocking the bootloader, the bootloader can't be locked again, which means that if someone steals your phone, all the information can be retrieved because by unlocking the bootloader, the phone loses encryption. The advantage is that this system supports a microG service that you can choose whether or not; it also **supports many more devices from Xiaomi to Samsung.**
 
-   2. **Zamjena za Google Play Store**
+   2. **Replacement for the Google Play Store**
 
-      + [F-Droid](https://www.f-droid.org/) najbolja trgovina za skidanje aplikacija, a podržava samo FOSS (Free Open Source Software) aplikacije.
+      + [F-Droid](https://www.f-droid.org/) the best app store that only supports FOSS (Free Open Source Software) apps.
 
-      + [Aurora Store](https://auroraoss.com/) također jedna od boljih trgovina za skidanje aplikacija. 
+      + [Aurora Store](https://auroraoss.com/) also, one of the better app stores. 
 
-## Aplikacije orijetisane ka digitalnoj privatnosti.
+## Digital privacy oriented applications.
 
-Postoji mnogo aplikacija za privatnost, ja ću nabrojati nekoliko, a ostale možete provjeriti na [PrivacyToolsIO](https://www.privacytools.io/).
+There are many privacy applications, I will list a few, and you can check the others at [PrivacyToolsIO](https://www.privacytools.io/).
 
-+ [Joplin](https://joplinapp.org/) aplikacija za note, i to-do liste
++ [Joplin](https://joplinapp.org/) application for notes and to-do lists.
 
-+ [KeePass](https://keepassxc.org/) password manager, aplikacija koja čuva vaše šifre, ne podržava Cloud Backup tako da manuelno morate praviti kopije nakon svake dodane šifre.
++ [KeePass](https://keepassxc.org/) password manager, an application that stores your passwords, does not support cloud backup, so you have to make copies after each password is added manually.
 
-+ [Bitwarden](https://bitwarden.com/) password manager, koji podržava Cloud Backup.
++ [Bitwarden](https://bitwarden.com/) password manager, that supports cloud backup.
 
-+ [Signal](https://www.signal.org/) aplikacija za chat i pozive, **NAPOMENA** signal će uskoro promjeniti model zarade tako da postoji mogućnost da će krenuti prikupljati podatke, **XMPP i MATRIX(Element)** su zamjene za Signal ali ne podržavaju pozive.
++ [Signal](https://www.signal.org/) application for chat and calls, **NOTE** signal will soon change the earnings model, so there is a possibility they start collecting data, **XMPP and MATRIX (Element)** are replacements for Signal but do not support calls.
 
-+ [Nextcloud](https://nextcloud.com/) jako dobra alternativa za Google Photos i Google Drive, ali zahtjeva self hosting, što znači da morate imati računar sa većim hard diskom da sebi hostate NextCloud.
++ [Nextcloud](https://nextcloud.com/) an excellent alternative to Google Photos and Google Drive, but requires self-hosting, which means you have to have a computer with a bigger hard drive to host NextCloud.
 
-+ [Protonmail](https://protonmail.com/) alternativa za Gmail.
++ [Protonmail](https://protonmail.com/) alternative to Gmail
 
-## Korisni linkovi
+## Useful links
 
 + [EFF](https://www.eff.org/)
 
@@ -128,10 +126,10 @@ Postoji mnogo aplikacija za privatnost, ja ću nabrojati nekoliko, a ostale mož
 + [r/degoogle](https://www.reddit.com/r/degoogle/)
 
 
-## Zaključak
+## Conclusion
 
-Dosta aplikacija možete naći na F-droid marketu. Siguran je i za skoro sve postoji alternativa na njemu. Što se tiče mobitela mislim da je Google Pixel najbolje uzeti i instalirati GrapheneOS na njemu. Od računarskih sistema bilo koja Linux distribucija je dobra za početak ! 
+You can find a lot of applications on the F-droid market. It is safe, and there is an alternative for almost everything. As for the cell phones, I think the Google Pixel is best to take and install GrapheneOS on it. Any Linux distribution is an excellent place to start for computer systems!
 
 
-### Hvala puno na vašem vremenu !
+### Thank you so much for your time !
 
