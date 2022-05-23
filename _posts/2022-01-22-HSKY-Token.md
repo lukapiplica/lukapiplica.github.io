@@ -19,26 +19,26 @@ tags:
 </p>
 
 
-## Šta je to Crypto Token ?
+## What is a Crypto Token ?
 
 
-Danas sve više ljudi koristi kriptovalute, neke od poznatih su Bitcoin, Dogecoin, Etherium, Solana itd. sve ove kriptovalute imaju svoj blockchain. Mi pravimo kripto token, on za razliku od ovih ostalih popularnih kriptovaluta koje imaju svoj blockchain, radi na blockchain-u drugih kriptovaluta. Specifično mi čemo koristiti Solanu zbog jeftine naknade koja se dešava prilikom prebacivanje ovog token-a i zbog brzine (Solana ima jako brz blockchain za razliku od ostalih).
+Today more and more people use cryptocurrencies; some famous ones are Bitcoin, Dogecoin, Etherium, Solana etc. All these cryptocurrencies have their blockchain. We are making a crypto token; unlike other popular cryptocurrencies with their own blockchain, crypto tokens work on blockchains of other cryptocurrencies. Specifically, we will use Solana because of the cheap fee when switching this token and the speed (Solana has a very fast blockchain, unlike the others).
 
 
-## Šta je sve potrebno:
+## What is needed:
 
-+ **Operativni sistem:** [Debian Linux](https://www.debian.org/)  
-+ **Github profil** [Github](https://github.com)
-+ **Kripto mjenjačnica** [Binance](https://www.binance.com/en)
++ **Operating system:** [Debian Linux](https://www.debian.org/)  
++ **Github profile** [Github](https://github.com)
++ **Crypto exchange** [Binance](https://www.binance.com/en)
 + **Phantom wallet** [PhantomWallet](https://phantom.app/)
 + **Solflare** [Solflare](https://solflare.com/)
 
-**NAPOMENA: Potrebno je kupiti Solana-u !**
+**NOTE: It is necessary to buy Solana!**
 
 
-## Uputstva
+## Instructions
 
-Prva stvar koju moramo uraditi je napraviti neku virtualnu mašinu, a zatim instalirati Debian linux u CLI-u (bez grafičkog interfejsa). 
+We need to create a virtual machine and then install Debian Linux in the CLI (without a graphical interface).
 
 <p align="center">
   <img width="100%" src="/assets/images/hsky/1.png" />
@@ -49,172 +49,172 @@ Prva stvar koju moramo uraditi je napraviti neku virtualnu mašinu, a zatim inst
   <img width="100%" src="/assets/images/hsky/2.png" />
 </p>
 
-Nakon instalacije Debian-a prvu stvar što trebate je updejtovati sistem. 
+After installing Debian, the first thing you need to do is update the system.
 
-## Updejtovanje **Debian-a**: 
+## Updateing **Debian**: 
 
    ```shell
    sudo apt update
    sudo apt upgrade
    ```
 
-## Instalacija **Solaninog alata**:
+## Installing **Solanas tools**:
 
      ```shell 
      sh -c "$(curl -sSfL https://release.solana.com/v1.8.5/install)"
      ```
      
-    Zatim ukucati **exit** i ponovno se logovati u CLI.
+    Then type **exit** and log in to CLI again.
 
-## Pravljenje **Crypto Wallet-a**:
+## Creating a **Crypto Wallet**:
 
     ```shell
      solana-keygen new
     ```
 
-    Pritisnuti enter dva puta i uspješno ste napravili wallet. 
+    Press enter twice, and you have successfully created a wallet.
 
-    **NAPOMENA: PUBLIC KEY JE ZAPRAVO VAŠA WALLET ADRESA, A SEED PHRASE SAČUVAJTE NEGDJE U SLUČAJU DA IZGUBITE WALLET !**
+    **NOTE: PUBLIC KEY IS ACTUALLY YOUR WALLET ADDRESS, AND SAVE THE SEED PHRASE SOMEWHERE IN CASE YOU LOSE THE WALLET!**
 
 <p align="center">
   <img width="100%" src="/assets/images/hsky/4.png" />
 </p>
 
-## Kupovina Solana-e.
+## Buying Solana.
 
-Da bismo napravili naš token, moramo kupiti Solane. Moja preporuka je Binance.
+To make our token, we have to buy Solana. My recommendation is Binance.
 
 <p align="center">
   <img width="100%" src="/assets/images/hsky/6.png" />
 </p>
 
-## Prebacivanje Solana-e:
+## Transfering Solana:
 
-Nakon što kupimo Solana-u, ona trenutno stoji na Binance-u. Moramo je prebaciti u wallet na virtualnoj mašini. 
+After we buy Solana, it is located on Binance. We need to transfer it to the wallet on the virtual machine.
 
-**NAPOMENA: ADRESA NA KOJU ŠALJETE IZ BINANCE-A JE PUBLIC KEY KOJI SMO NAPRAVILI U VIRTUALNOJ MAŠINI !**
+**NOTE: THE ADDRESS YOU ARE SENDING TO FROM BINANCE IS THE PUBLIC KEY WE MADE IN A VIRTUAL MACHINE!**
 
 <p align="center">
   <img width="100%" src="/assets/images/hsky/7.png" />
 </p>
 
-Nakon što prebacimo Solana-u, da bi mogli vidjeti koliko imamo Solana-e u CLI kucamo:  
+After we have successfully transferred Solana, we want to see how many Solana we have in CLI; we type: 
 
 ```shell
  solana balance
 ```
 
-## Instalacija **Rust-a**:
+## Installation of **Rust**:
 
 ```shell
  curl https://sh.rustup.rs -sSf | sh
 ```
-Nakon što kliknemo enter, pritisnuti 1 za default instalaciju. 
+After clicking enter, press 1 for the default installation. 
 
 <p align="center">
   <img width="100%" src="/assets/images/hsky/8.png" />
 </p>
 
-Ukucati **exit** i ponovno se prijaviti na virtualnu mašinu.
+Type **exit** and log in to the virtual machine again.
 
-## Instalacija potrebnih paketa:
+## Installation of required packages:
 
 ```shell
  sudo apt install libudev-dev libssl-dev pkg-config build-essential
 ```
 
-## Instalacija **SPL-a**:
+## Installation of **SPL**:
 
 ```shell
  cargo install spl-token-cli
 ```
 
-## Pravljenje kripto token-a:
+## Creating a crypto token:
 
 ```shell
  spl-token create-token
 ```
 
-## Pravljenje account-a koji će čuvati naš token. 
+## Creating an account that will keep our token: 
 
 ```shell
  spl-token create-account *TOKEN ID*
 ```
-**NAPOMENA: TOKEN ID JE TOKEN ŠTO SMO DOBILI POKRETANJEM PROŠLE KOMANDE !**
+**NOTE: TOKEN ID IS A TOKEN THAT WE GOT BY ENTERING THE LAST COMMAND!**
 
 <p align="center">
   <img width="100%" src="/assets/images/hsky/14.png" />
 </p>
 
-## Mintovanje token-a i dodavanje količine vašeg token-a.
+## Minting tokens and creating the number of tokens:
 
 ```shell
- spl-token mint *PRVI TOKEN ID* *BROJ KOLIČINE (KOLIKO ŽELITE VAŠIH TOKEN-A UKUPNO)* *DRUGI TOKEN ID OD ACCOUNT-A*
+ spl-token mint *FIRST TOKEN ID* *NUMBER OF QUANTITIES* *SECOND TOKEN ID OF THE ACCOUNT*
 ```
 
 <p align="center">
   <img width="100%" src="/assets/images/hsky/15.png" />
 </p>
 
-Uspješno ste napravili vaš token. 
+You have successfully created your token.
 
-## Prebacivanje Token-a drugima. 
+## Transferring your tokens to others: 
 
-Da bismo prebacili vaš token drugima, moraju prvo napraviti wallet ili na telefonu ili u webbrowser-u. Ako pravite wallet na telefonu onda Solflare je odličan wallet, a ako pravite wallet u web pretraživaču onda Phantom Wallet. 
+To transfer your token to others, they must first make a wallet either on the phone or in a web browser. If you want to make a wallet on your phone, then Solflare is a great wallet, and if you're going to make a wallet in a web browser, I suggest Phantom Wallet.
 
 ```shell
- spl-token transfer --fund-recipient --allow-unfunded-recipient *PRVI TOKEN ID* *KOLIKO ŽELIMO POSLATI* *WALLET ADRESA NA KOJU ŠALJEMO*
+ spl-token transfer --fund-recipient --allow-unfunded-recipient *FIRST TOKEN ID* *HOW MUCH DO YOU WANT TO SEND* *WALLET ADDRESS TO WHICH WE WILL SEND OUR TOKENS*
 ```
 <p align="center">
   <img width="100%" src="/assets/images/hsky/16.png" />
 </p>
 
-## [Solscan](https://solscan.io/) stranica
+## [Solscan](https://solscan.io/) site:
 
-Da bi provjerili naš token, možemo zalijepiti prvi TOKEN ID na ovoj stranici. 
+We can paste the first **TOKEN ID** on this page to check our token.
 
 <p align="center">
   <img width="100%" src="/assets/images/hsky/17.png" />
 </p>
 
-## Dodavanje Token-a u Solana registry: 
+## Adding a Token to the Solana registry: 
 
-+ Napraviti sliku za vaš token, mora biti manja od 200kb
-+ Napraviti Github Account
++ Firstly create an image for your token; it must be less than 200kb.
++ Make a Github account.
 
-+ Napraviti novu repozitoriju i prenijeti sliku vašeg token-a u taj repozitorij (imenovati je logo.png). 
++ Please create a new repository and upload an image of your token to that repository (name it logo.png).
 
 <p align="center">
   <img width="100%" src="/assets/images/hsky/19.png" />
 </p>
 
-+ Otići na https://github.com/solana-labs/token-list i Fork-ovati.
++ Visit https://github.com/solana-labs/token-list and fork it.
 
 <p align="center">
   <img width="100%" src="/assets/images/hsky/20.png" />
 </p>
 
-+ Pritisnuti . da bi se otvorio Visual Studio Code.
++ Press . to open Visual Studio Code in your web browser.
 
 <p align="center">
   <img width="100%" src="/assets/images/hsky/21.png" />
 </p>
 
-+ Sa lijeve strane otići na **assets/mainnet** kliknuti desni klik i napraviti novi folder i zalijepiti Token adresu.
++ On the left, go to **assets/mainnet** right, click and create a new folder and paste the Token address.
 
-+ Desni klik na folder i kliknuti upload, zatim upload-ati sliku vašeg token-a.
++ Right-click on the folder and click upload, then upload the image of your token.
 
-+ Zatim sa lijeve strane otići u folder **src**, zatim u folder **tokens** i otvoriti **solana.tokenlist.json** fajl.
++ Then go to the **src** folder on the left, and you will see **tokens** folder, open the **solana.tokenlist.json** file.
 
-+ Otići na dno fajl-a i onda dodati vaš token u JSON formatu, najlakše je kopirati i zalijepiti informacije od token-a prije vašeg i onda samo promjeniti vrijednosti.
++ Go to the bottom of the file and then add your token in JSON format; it's easiest to copy and paste the information from the token before yours and then change the values.
 
-+ Na lijevoj strani ima ikonica sa tri kruga kliknuti na nju, a zatim dodati poruku o tome šta radimo i kliknuti na kvačicu.
++ On the left, there is an icon with three dots; click on it, then add a message about what you're doing and click on the checkmark.
 
-+ Zatim vratiti se na Solanin github i ići na pull request.
++ Then go back to Solana's GitHub and request a pull request.
 
-+ Uraditi merge i sačekati da taj proces završi. Solana svakih sat vremena radi provjeru tako da moguće je da vaš pull request bude primljen tek nakon sat vremena. 
++ Do the merge and wait for the process to end. Solana does a check every hour, so your pull request may only be received after an hour.
 
-## Finalni produkt: 
+## Final product: 
 
 <p align="center">
   <img width="100%" src="/assets/images/hsky/22.png" />
@@ -226,10 +226,9 @@ Da bi provjerili naš token, možemo zalijepiti prvi TOKEN ID na ovoj stranici.
 
 
 
-## Zaključak
+## Conclusion
 
-Zanimljiv projekat, mnogo toga se može naučiti pogotovo o kriptovalutama i kako one funkcionišu. Trenutno ovaj projekat nema nikakve primjene i nije pojekat na kojem se može zaraditi, ali znanje je dovoljno.    
+It is an exciting project; much can be learned, especially about cryptocurrencies and how they work. Currently, this project has no application and is not a project that can earn you money, but knowledge is enough.
 
-
-### Hvala puno na izdvojenom vremenu !
+### Thank you so much for your time!
 
