@@ -1,91 +1,93 @@
 ---
 permalink: /about/
-title: "O Meni"
+title: "About Me"
 ---
 
 
-
 <p align="center">
-  <img width="50%" src="/assets/images/about/logo.png" />
+  <img width="50%" src=".assets/logo.png" />
 </p>
 
 <p align="center">
-  <b>👋 O meni 👋</b>
+  <b>👋 About Me👋</b>
 </p>
 
 
-## Uvod:
+## How it all started:
 
-Zovem se Luka, mladi sam mrežni administrator i cyber-sigurnosni istraživač. Od malih nogu se bavim informatikom, a sve je počelo od popravke svoga prvog računara. Neispravna RAM memorija koju sam trebao zamijeniti. Nakon toga sve sam više eksperimentisao oko elektronike u računaru i vremenom stekao neko osnovno znanje o tome kako računari rade. 
+Hi, my name is Luka. I'm a young network administrator and cybersecurity reasercher. I'm into technology since I was little, and everything began with my first computer repair, a faulty RAM stick which I had to replace. After that I began experimenting with electronics inside PC's and after some time I got some basic level knowledge on how computers work.
 
-Svoje znanje o računarima sam unaprijedio pomoću čitanja mnogih članaka i foruma o računarima. Svojim bližnjima sam bio IT podrška, počevši od uputa o korištenju i instalacija operativnih sistema do održavanja mnogih elektroničkih uređaja.
+I gained more knowledge as time passed by and I started by being an IT support for my family and friends starting with instructions on how to use a computer, then moving to reinstalling operating systems and after that I gained some basic A+ knowledge on computer systems.
 
-## Srednja škola:
 
-Završio sam [Željeznički školski centar](https://zsc.edu.ba/) sa zvanjem elektrotehničara elektronike. Zahvaljujući mnogim profesorima u ovoj školi, stekao sam novo znanje o raznim elektroničkim komponentama, telekomunikacionim sistemima itd.
+## High School:
 
-1. **Prva godina:**
+I finished [Željeznički školski centar](https://zsc.edu.ba/) with the title of electrical tehnician. Thanks to many professors in this school, I gained new knowledge about various electronic components, telecommunication systems, etc.
 
-   Tokom prve godine stekao sam znanje o elektrotehničkim komponentama (otpornici, kondenzatori, zavojnice itd.) i usavršio vještine lemljena. Na školskom takmičenju iz predmeta Osnove elektrotehnike sam osvojio prvo mjesto. 
+
+1. **First Year:**
+
+   During the first year, I gained knowledge about electrical components (resistors, capacitors, coils, etc.) and improved my soldering skills. I won first place in the school competition in the subject Basics of Electrical Engineering.
    
-   Također sam pohađao nekoliko srednjoškolskih sekcija uključujući:
-   + elektrohemiju, 
-   + engleski jezik, 
-   + osnove elektrotehnike,
-   + matematika.
+   I also attended several high school sections including:
+   + electrochemistry,
+   + English language,
+   + basics of electrical engineering,
+   + mathematics.
 
 
-2. **Druga godina:**
+2. **Second Year:**
 
-   Tokom druge godine sam imao priliku da sa grupom kolega iz razreda radimo na projektu "Arduino Scoreboard", koje nam je donijelo osvojeno prvo mjesto na državnome takmičenju (IX Festival rada) u Hadžićima. 
+   During the second year, I had the opportunity to work with a group of classmates on the project "Arduino Scoreboard", which brought us won first place in the state competition (IX Festival rada) in Hadžići.
 
    <p align="center">
-      <img width="75%" src="/assets/images/about/scoreboard.jpg" />
+      <img width="75%" src=".assets/scoreboard.jpg" />
    </p>
 
-   + Arduino Scoreboard (semafor) je napravljen pomoću Arduino mikrokontrolera, i WiFi modula    koji nam uspostavlja konekciju sa HTML web stranicom (koju možete vidjeti na laptopu) i pomoću nje kontrolišemo brojeve i vrijeme na semaforu. Brojevi su ručno napravljeni od LED trake koja nam predstavlja sedmosegmentne displeje. 
+   + The Arduino Scoreboard is made using an Arduino microcontroller, and a WiFi module that connects us to the HTML web page (which you can see on the laptop) and with it we control the numbers and time on the traffic light. The numbers are handmade from an LED strip that acts like seven-segment displays.
 
 
-3. **Treća godina:**
+3. **Third year:**
 
-   Tokom treće godine naučio sam praviti vlastite PCB ploče kao i napredno znanje o tranzistorima. Na završnome radu iz prakse imao sam priliku da radim na projektu audio pojačala. 
-
-   <p align="center">
-      <img width="50%" src="/assets/images/about/audio.jpg" />
-   </p>
-   
-   Kao i prethodne godine sudjelovali smo na X Festivalu rada koji je bio održan u Zenici. Kao projekat smo imali solarno drvo koje nam je donijelo prvo mjesto.
+   During my third year, I learned to make my own PCB's as well as advanced knowledge about transistors. This year we had to make something for our final project, I had the opportunity to work on an audio amplifier project.
 
    <p align="center">
-      <img width="50%" src="/assets/images/about/solarno.jpg" />
-   </p>
-
-
-4. **Četvrta godina:**
-
-   Završne godine sam najviše stekao znanja iz telekomunikacija, gdje sam za završni rad imao temu o radio prijemnicima. Projekat koji smo radili za XI Festival rada je LED stol isprogramiran Arduino mikrokontrolerom. 
-
-   <p align="center">
-      <img width="75%" src="/assets/images/about/ledtable.jpg" />
+      <img width="50%" src=".assets/audio.jpg" />
    </p>
    
-   Ovaj projekat nam je donio treću godinu zaredom prvo mjesto. 
+   As in previous year, we participated in the X Festival rada, which was held in Zenica. As a project we had a solar tree which brought us first place.
+
+   <p align="center">
+      <img width="50%" src=".assets/solarno.jpg" />
+   </p>
+
+
+4. **Fourth year:**
+
+   In the final year, we mostly learned about telecommunications, where I had a topic about radio recievers for my final work. The project we worked on for the XI Festival rada is an LED desk programmed with an Arduino microcontroller to display patterns.
+
+   <p align="center">
+      <img width="75%" src=".assets/ledtable.jpg" />
+   </p>
+   
+   This project brought us the first place for the third year in a row.
 
 
 ## ITAcademy
 
-Nakon završene srednje škole, odlučio sam da svoje znanje o informacionim tehnologijama nastavim na ITAkademiji smjeru mrežne administracije. Konkretno CCNA (Cisco Certified Network Administrator) pripremu, gdje sam naučio postavljati i konfigurisati mnoge mrežne uređaje, kao i napredno znanje u korištenju Windows Server i Linux operativnih sistema. Nakon završene ITAkademije, odlučio sam da svoje trenutno znanje proširim u sektoru cyber sigurnosti. Trenutno sam prvi u BiH na TryHackMe tabeli. 
+After graduating from high school, I decided to continue my knowledge of information technology at the ITAcademy in the field of network administration. Specifically CCNA (Cisco Certified Network Administrator) preparation, where I learned to set up and configure many network devices, as well as advanced knowledge in using Windows Server and Linux operating systems. After graduating from the ITAcademy, I decided to expand my current knowledge in the cybersecurity sector. I am currently first in Bosnia and Herzegovina on the TryHackMe table.
+
 
 <p align="center">
-   <img width="75%" src="/assets/images/about/thm.png" />
+   <img width="75%" src=".assets/thm.png" />
 </p>
 
 
-## Moji hobiji:
+## My hobbies:
 
 + ⌨️ `[Linux OS]`
 
-   Napredno znanje o korištenju Linux operativnih sistema, različitih distribucija i napredno poznavanje terminala i njegovih komandi. Odlučio sam se za Linux operativni sistem zato što volim eksperimentisati sa različitim TWM-ima (Tiling Window Manager). Koristio sam dole navedene distribucije:
+   Advanced knowledge of using Linux operating systems, various distributions and advanced knowledge of the terminal and its commands. I opted for the Linux operating system because I like to experiment with different TWMs (Tiling Window Manager). I have used these distributions below:
 
    + Ubuntu Linux
    + Debian Linux
@@ -98,52 +100,52 @@ Nakon završene srednje škole, odlučio sam da svoje znanje o informacionim teh
    + Gentoo Linux
 
 
-+ 💿 `[Elektronika]`
++ 💿 `[Electronics]`
 
-   Uvijek nešta eksperimentišem sa elektronikom počevši od računara pa sve do mobitela, televizora itd. 
+   I always experiment with electronics, from computers to cell phones, televisions, etc.
 
-   Ako je nešta pokvareno uvijek pokušam rastaviti i popraviti sam, a ako nešta ne znam uvijek postoji dobar prijatelj DuckDuckGo pretraživač. Upoznat sam i sa hardware-skom i software-skom stranom mnogih elektroničkih uređaja. 
+   If something is broken I always try to disassemble and fix it myself, and if I don’t know something there is always a good friend called DuckDuckGo search engine. I am also familiar with the hardware and software side of many electronic devices.
 
 + 🤖 `[Cybersecurity]`
 
-   Najveći dio svoga slobodnog vremena provodim istraživajući i čitajući o novim hakerskim napadima i kako je taj napad izvršen.
+   I spend most of my free time researching and reading about new hacker attacks and how that attack was carried out.
 
-   Ako je neki malware onda napravim virtualnu mašinu instaliram maliciozni fajl, a zatim ga analiziram. Šta on trenutno radi na sistemu, s kojim fajlovima komunicira, šta upisuje u memoriju itd. Upravo zbog ovoga sam i započeo ovaj blog da bih mogao dokumentovati ovaj proces.
+   If it is some malware then I make a virtual machine and install the malicious file and then analyze it. What the file is currently doing on the system, what other files is it communicating with, what is it  writing to memory, etc. This is exactly why I started this blog so I could document this process.
 
-+ 📚 `[Arduino programiranje]`
++ 📚 `[Arduino programming]`
 
-   Mnoge projekte je moguće uraditi na Arduino mikrokontroleru. Arduino nam služi kao mozak elektroničkih komponenti. 
+   Many projects can be done on an Arduino microcontroller. The Arduino serves us as the brain of electronic components.
 
-   Odličan je i za početnike koji žele da nauče o elektronici, ali to ne znači da je Arduino samo namijenjen za njih. Mnogo kompleksnih projekata možemo napraviti sa ovim mikrokontrolerom.  
+   It’s also great for beginners who want to learn about electronics, but that doesn’t mean the Arduino is just meant for them. We can do many complex projects with this microcontroller.
 
 + 🖥️ `[Raspberry Pi]` 
 
-   Raspberry Pi nam je mali kompjuter sa procesorom, memorijom itd. Otvara nam dosta novih prilika za još kompleksnije projekte od Arduina kao naprimjer: praćenje satelita, arkadne mašine sa starim igricama, SNES (Super Nintendo) emulator itd. 
+   The Raspberry Pi is a small computer with a processor, memory, etc. It opens up a lot of new opportunities for even more complex projects than Arduino, such as: satellite tracking, arcade machines with old games, SNES (Super Nintendo) emulator, etc.
 
-+ 💻 `[Stare konzole]` 
++ 💻 `[Old consoles]` 
 
-   Skupljam stare konzole za igrice, a zatim radim projekte na njima.
+   I collect old game consoles and then do projects on them.
 
-   Primjer projekta koji sam radio je Linux operativni sistem instaliran na Nintedno 3DS-u. Također modujem konzole kao Xbox 360 sa RGH ili JTAG čipom. 
+   An example of a project I was working on is installing a Linux OS on a Nintedno 3DS. I also modify consoles like for example Xbox 360 with an RGH or JTAG chip.
 
-+ 📁 `[Aktivista za digitalnu privatnost]` 
++ 📁 `[Digital privacy activist]` 
 
-   Već dugo vremena je poznato da velike kompanije kao Google i Facebook špijuniraju nas. Stavljaju nas u poziciju gdje normalni građanin je nadgledan 24 sata svaki dan. Nažalost u Bosni i Hercegovini tema digitalne privatnosti nije toliko spomenuta. Zašto kompanije imaju uopšte pravo da prikupljaju podatke o nama ?
+   It has long been known that big companies like Google and Facebook are spying on us. They put us in a position where a normal citizen is monitored 24 hours a day. Unfortunately, in Bosnia and Herzegovina, the topic of digital privacy is not so much mentioned. Why do companies have the right to collect data about us at all ?
 
-   Dobrovoljno sam se prijavio za humanitarni rad u [EFF](https://www.eff.org/) neprofitnoj organizaciji koja se bori protiv ovih parazita od kompanija. 
+   I signed up for volunteer work at [EFF](https://www.eff.org/), a non-profit organization that fights these parasites from companies.
 
-   Vaša privatnost, vaša kontrola nad vašim podatcima i vaša sloboda govora na internetu ! 
+   Your privacy, your control over your data and your freedom of speech on the internet ! 
    
 
-## Certifikati 
+## Certificates
 
-Ovdje je lista mojih certifikata koje posjedujem:
+Here is a list of my certificates:
 
-| Certifikat | Certificate ID |
+| Certificates | Certificate ID |
 | --- | --- |
-| ITAcademy Certified Computer Network Administrator  | <kbd> 025056 </kbd> |
-| Google Digital Garage | <kbd> 325 B49 2XV </kbd>|
-| Udemy Learn to code with Python 3! | <kbd> UC-b268fbf0-8a81-4575-97a3-75876f56ab12 </kbd> |
+| ITAcademy Certified Computer Network Administrator  | <kbd> [025056](https://www.link-group.eu/certificate) </kbd> |
+| Google Digital Garage | <kbd> [325 B49 2XV](https://learndigital.withgoogle.com/digitalgarage/validate-certificate-code) </kbd>|
+| Udemy Learn to code with Python 3! | <kbd> [UC-b268fbf0-8a81-4575-97a3-75876f56ab12](https://ude.my/UC-b268fbf0-8a81-4575-97a3-75876f56ab12) </kbd> |
 | TryHackMe Complete Begginer Learning Path  | <kbd> THM-PV3UWE6H73 </kbd> |
 | TryHackMe CompTIA Pentest+ Learning Path  | <kbd> THM-VJ140KARRQ </kbd> |
 | TryHackMe Offensive Pentesting Learning Path  | <kbd> THM-EUR7X51H4W </kbd> |
@@ -151,21 +153,18 @@ Ovdje je lista mojih certifikata koje posjedujem:
 | TryHackMe Advent of Cyber 2020  | <kbd> THM-TVKIPRVSSQ </kbd> |
 
 
-## Diplome
+## Diplomas
 
-Ovdje je lista mojih diploma koje posjedujem:
+Here is a list of my diplomas:
 
-| Diploma | Vrsta takmičenja | Osvojeno mjesto |
+| Diplomas | Type of competition | Place won |
 | --- | --- | --- |
-| Željeznički školski centar Osnove Elektrotehnike  | <kbd> Školsko </kbd> | <kbd> Prvo </kbd> |
-| IX Festival rada  | <kbd> Državno </kbd> | <kbd> Prvo </kbd> |
-| X Festival rada  | <kbd> Državno </kbd> | <kbd> Prvo </kbd> |
-| XI Festival rada  | <kbd> Državno </kbd> | <kbd> Prvo </kbd> |
+| Željeznički školski centar Osnove Elektrotehnike  | <kbd> School </kbd> | <kbd> First </kbd> |
+| IX Festival rada  | <kbd> State </kbd> | <kbd> First </kbd> |
+| X Festival rada  | <kbd> State </kbd> | <kbd> First </kbd> |
+| XI Festival rada  | <kbd> State </kbd> | <kbd> First </kbd> |
 
 
+### Thank you for your time.
 
-## Pitanja 
-Ako imate neka pitanja, možete me kontaktirati na e-mail adresu **lukapiplica@protonmail.ch**
-
-### Hvala puno na vašem vremenu.
 
