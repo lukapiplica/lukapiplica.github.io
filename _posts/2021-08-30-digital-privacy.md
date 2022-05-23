@@ -31,7 +31,7 @@ Would you be embarrassed to know that someone has access to your gallery on your
 
 ## Why digital privacy is important ?
 
-Digital privacy is important because you have control over ** your ** data, and of course, you get the right to your opinion. We can see this example with Facebook, which impacted the 2016 elections by forcing users to advertise for a particular candidate, thus influencing the opinion of many users. 
+Digital privacy is important because you have control over **your** data, and of course, you get the right to your opinion. We can see this example with Facebook, which impacted the 2016 elections by forcing users to advertise for a particular candidate, thus influencing the opinion of many users. 
 
 Relevance of information, if you want to learn something new or read, you will probably search for information on Google and then enter a website. Unfortunately, many pages today are full of information that is not needed (advertising). The best example is if I want to search for a recipe on the internet, it will take a few seconds for that page to load. If we measure, we spend approximately 100 Mb per page, of which 20 Mb is relevant (what I searched for).
 
