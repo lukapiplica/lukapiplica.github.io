@@ -16,21 +16,21 @@ tags:
 
 
 <p align="center">
-  <b>👋 GNOME goes NORD konfiguracijski fajlovi 👋</b>
+  <b>👋 GNOME goes NORD configuration files 👋</b>
 </p>
 
 
 
-### Hvala na posjeti!
+### Thank you for visiting!
 
 <img src="/assets/images/gnomenord/edited2.png" alt="img" align="center" width="400px">
 <img src="/assets/images/gnomenord/edited1.png" alt="img" align="center" width="400px">
 
-Ovo su moji trenutni dotfile-ovi Pop! OS Linux distribucije.
+These are my current dotfiles of Ubuntu Linux distribution OS.
 
-Instalacija će vam pomoći da napravite isti izgled kao na slikama, tu imate uputstvo korak po korak.
+The installation will help you create the same look as in the pictures; here are the step-by-step instructions.
 
-Sistemske Specifikacije:
+System specifications:
 
 + **OS**: [Ubuntu](https://ubuntu.com/) 
 + **GTK Theme**: [Nordic](https://www.gnome-look.org/p/1267246)
@@ -39,70 +39,69 @@ Sistemske Specifikacije:
 + **Browser**: [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
 
-## Instalacija
+## Installation
 
-Da bismo počeli sa pravljenjem ovog izgleda, pretpostavljam da imate friško instaliran Ubuntu 20.04 sa minimalnom instalacijom.
+I assume you have freshly installed Ubuntu 20.04 with minimal installation to start making this look.
 
-*Ako vas zanima šta koja aplikacija radi Wikipedia 'e vam pomoći.*
+*If you are interested in what an application does, Wikipedia will help you.*
 
-1. Updejtanje repozitorija i upgrejdanje sistema: 
+1. Repository upgrade and system upgrade: 
 
       ```shell
       sudo apt update
       sudo apt upgrade
       ```
 
-2. Instalacija **Gnome Tweak Tool**:
+2. Installation of **Gnome Tweak Tool**:
 
-   Prvo moramo instalirati gnome tweak tool, da bismo mogli instalirati gnome ekstensions.
+   We must first install the gnome tweak tool to install the gnome extensions.
 
-   + **Instalacija Gnome Tweak Tool-a**:
+   + **Installation of Gnome Tweak Tool**:
 
      ```shell 
      sudo apt install gnome-shell-extensions
      ```
 
-   + **Zatim otvoriti Firefox i otići na [LINK](https://extensions.gnome.org/) i skinuti add-on.**
+   + **Then open Firefox and go to [LINK](https://extensions.gnome.org/) and download the add-on.**
 
  
-   + **Skidanje potrebnih dodataka**:
+   + **Download the necessary add-ons**:
 
-    Nakon što skinemo Gnome Extension add-on moramo pomjeriti slider na On, na nekoliko dodataka, njih možete pronaći na linkovima ispod:
+    After downloading the Gnome Extension add-on, we need to move the slider to On for a few add-ons; you can find them at the links below:
 
     [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)
     [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
     [Transparent Window Moving](https://extensions.gnome.org/extension/1446/transparent-window-moving/)
 
+    Then make sure they are included in the operating system by opening the Gnome Tweak Tool app and making sure the above add-ons are included; also, turn off the Desktop icons.
 
-    Zatim provjeriti da li su uključeni u operativnom sistemu, tako što otvorimo aplikaciju Gnome Tweak Tool i provjerimo da li su uključene gore navedeni dodatci, također isključiti Desktop ikonice. 
+  **NOTE:** You can set Dash to Panel in the settings as you wish (to make icons smaller etc.). Also, Transparent Window moving my settings are at 0.2.
 
-    **NAPOMENA:** Dash to panel možete u postavkama postaviti po vašoj želji (da napravite ikonice manje itd.), također i Transparent Window moving moje postavke su na 0.2. 
-
-   + **Instaliranje Pop Shell-a**:
+   + **Installation of Pop Shell**:
 
      ```shell
      sudo apt install git node-typescript make
      ``` 
 
-     Nakon instalacije potrebnih dependency-a, trebamo otići u Downloads folder u terminalu. 
+     After installing the necessary dependencies, we need to go to the Downloads folder in the terminal.
 
      ```shell
      cd ~/Downloads 
      ```
 
-     Zatim trebamo klonirati repozitoriju: 
+     Then we need to clone the repository: 
 
      ```shell
      git clone https://github.com/pop-os/shell.git
      ```
 
-     Zatim ulazimo u shell folder:
+     Then we enter the shell folder:
 
      ```shell
      cd shell
      ```
 
-     Instalacija Pop Shell-a:
+     Installation of Pop Shell:
 
      ```shell
      make local-install
@@ -110,57 +109,57 @@ Da bismo počeli sa pravljenjem ovog izgleda, pretpostavljam da imate friško in
 
 
 
-3. **Instalacija ostalih aplikacija**:
+3. **Installation of other applications**:
 
-   + Instalacija neofetch-a: 
+   + Installation of neofetch-a: 
 
       ```shell
       sudo apt install neofetch
       ```
 
-   + Instalacija zathura-e: 
+   + Installation of zathura-e: 
 
       ```shell
       sudo apt install zathura
       ```
 
-   + Instalacija tty-clock:
+   + Installation of tty-clock:
 
       ```shell
       sudo apt install tty-clock
       ```
 
-    + Instalacija cmatrix-a:
+    + Installation of cmatrix-a:
 
       ```shell
       sudo apt install cmatrix
       ```
 
-    + Instalacija htop-a:
+    + Installation of htop-a:
 
       ```shell
       sudo apt install htop
       ``` 
 
-    + Instalacija ranger-a:
+    + Installation of ranger-a:
 
       ```shell
       sudo apt install ranger
       ```
 
-    + Instalacija Vim-a: 
+    + Installation of Vim-a: 
 
       ```shell
       sudo apt install vim
       ```
 
-    + Instalacija Lollypop-a: 
+    + Installation of Lollypop-a: 
 
       ```shell
       sudo apt install lollypop
       ```
 
-    + Instalacija cbonsai-a:
+    + Installation of cbonsai-a:
 
       ```shell
       cd ~/Downloads
@@ -170,7 +169,7 @@ Da bismo počeli sa pravljenjem ovog izgleda, pretpostavljam da imate friško in
       make install PREFIX=~/.local
       ```
     
-    + Instalacija tty-tetris-a:
+    + Installation of tty-tetris-a:
 
       ```shell
       cd ~/Downloads
@@ -182,9 +181,9 @@ Da bismo počeli sa pravljenjem ovog izgleda, pretpostavljam da imate friško in
       ```
 
 
-    + Instalacija Cava-e:
+    + Installation of Cava-e:
 
-      Prvo instaliramo potrebne dependecy-e:
+      We first install the necessary dependencies:
 
       ```shell
       sudo apt install libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool automake libiniparser-dev
@@ -192,14 +191,14 @@ Da bismo počeli sa pravljenjem ovog izgleda, pretpostavljam da imate friško in
       export CPPFLAGS=-I/usr/include/iniparser
       ```
 
-      Zatim ulazimo u Downloads folder i kloniramo Cava repozitorij:
+      Then we go to the Downloads folder and clone the Cava repository:
 
       ```shell
       cd ~/Downloads
 
       git clone https://github.com/karlstav/cava.git
       ```
-      Zatim moramo kompajlirati Cavu:
+      Then we need to compile Cava:
 
       ```shell
       cd cava
@@ -208,13 +207,13 @@ Da bismo počeli sa pravljenjem ovog izgleda, pretpostavljam da imate friško in
       make
       ```
 
-      Zatim instaliramo Cavu: 
+      Now we can install Cava: 
 
       ```shell
       sudo make install
       ```
 
-    + Instalacija Ttyper-a:
+    + Installation of Ttyper-a:
 
       ```shell
       sudo apt install cargo
@@ -223,132 +222,126 @@ Da bismo počeli sa pravljenjem ovog izgleda, pretpostavljam da imate friško in
       ```
 
 
-4. **Instalacija GRUB teme**:
+4. **GRUB theme installation**:
 
-   + Kloniranje repozitorije:
+   + Repository cloning:
    
       ```shell
       cd ~/Downloads
       git clone https://github.com/semimqmo/sekiro_grub_theme
       ```
 
-   + Instalacija GRUB teme: 
+   + GRUB theme installation: 
 
       ```shell
       sudo ./install.sh
       ```
 
-5. **Instalacija Tema**: 
+5. **Various theme installation**: 
 
     + **GTK Theme**: [Nordic](https://www.gnome-look.org/p/1267246)
     + **Icon Theme**: [Flatery_Dark](https://www.gnome-look.org/p/1332404)
     + **Cursor Theme**: [Oreo_Blue](https://www.gnome-look.org/s/Gnome/p/1360254/)
 
-    **NAPOMENA**: Za instalaciju ovih tema, morate napraviti dva skrivena foldera u home direktoriji. 
+    **NOTE**: To install these themes, you need to create two hidden folders in the home directory.
 
     ```shell
     cd ~/
     mkdir .themes
     mkdir .icons
     ```
-    U .themes folder moramo ubaciti GTK temu i Icon temu, a u .icons ubaciti Cursor temu. Nakon toga ih moramo uklju;iti iz aplikacije Gnome Tweak Tools.
+    In the `.themes` folder, we need to insert the GTK theme and the Icon theme, and in the `.icons`, we need to insert the Cursor theme. Then we need to enable them from the Gnome Tweak Tools application.
 
-6. Napraviti ili skinuti već neki postojeći Startpage i dodati ga u Firefox. 
-7. Promjeniti Wallpaper kroz Gnome Tweak Tool.
+6. Create or download an existing Startpage and add it to Firefox. 
+7. Change Wallpaper through Gnome Tweak Tool.
 
 
 
 ## Wikipedia
 
-Nakon što smo napravili ovu konfiguraciju GNOME-a vrijeme je da pojasnimo šta koja aplikacija radi. 
+Now that we've made this GNOME configuration, it's time to clarify what each application does.
 
 + 🧠 `[Pop Shell]`
 
-   Pop Shell nam daje opciju da na Desktop sistemu koristimo Tilling Window Manager, koji raspoređuje prozore na ekranu po skripti i tako štedi prostora na ekranu.
+   Pop Shell gives us the option to use the Tilling Window Manager on the Desktop system, which arranges the windows on the screen by a script and thus saves screen space.
 
 + ⌨️ `[Neofetch]`
 
-   Neofetch je komanda koja nam daje sistemske specifikacije plus ima cool izgled. 
-
+   Neofetch is a command that gives us system specifications, plus it has a cool look.
 
 + 🍫 `[Zathura]`
 
-   Zathura je čitač PDF-ova, gdje je moguće mijenjati izgled i mnoge druge opcije pomoću jednog konfiguracijskog fajla.
+   Zathura is a PDF reader where it is possible to change the layout and many other options using a single configuration file.
 
 
 + 🐚 `[Ranger]` 
 
-   Ranger nam služi kao fajl manager u terminalu.
+  Ranger serves us as a file manager in the terminal.
 
 
 + 📋 `[Vim]` text editor
 
-  Kao što mnogi ljudi koriste notepad na Windows operativnim sistemima, mi koristimo nano i vim.
+  As many people use notepad on Windows operating systems, we use nano and Vim.
 
-  Nano text editor je puno lakši za korištenje, dok Vim je napravljen više za programere zbog njegovih kratica. 
+  The Nano text editor is much easier to use, while the Vim is made more for developers because of its shortcuts.
 
 
 + 🌳 `[cbonsai]`
 
-  Cbonsai je skripta koja nam u terminalu napravi drvo od znakova, slova i brojeva.
-
+  Cbonsai is a script that makes a tree of characters, letters and numbers in our terminal.
 
 + 🎮 `[tty-tetris]`
 
-  Tty-tetris je aplikacija koja nam omogućava igranje tetrisa u terminalu.
+  Tty-Tetris is an application that allows us to play Tetris on the terminal.
 
 + 📰 `[ttyper]`
 
-  Ttyper nam je aplikacija koja mjeri brzinu kucanja u terminalu. 
+  Ttyper is an application that measures the typing speed in the terminal. 
 
 
-+ 🕶️ `[Nordic]` GTK tema.
++ 🕶️ `[Nordic]` GTK theme.
 
-   Nordic Dark je GTK tema (tema za aplikacije sa korisničkim interfejsom) koja nam daje tamni izgled aplikacijama koje imaju korisnički interfejs.
+   Nordic Dark is a GTK theme (theme for user interface applications) that gives us a dark look at applications with a user interface.
 
-+ 🔷 `[Flattery]` tema za ikonice.
++ 🔷 `[Flattery]` icon theme.
 
-   Samo ime kaže, aplikacije koje imaju korisnički interfejs većinom imaju ikonice na koje možemo kliknuti mišem, ova tema nam pruža drugačiji izgled ikonicama.
+   The name itself says, applications that have a user interface mostly have icons that we can click with the mouse; this theme gives us a different look to the icons.
 
-+ 🔵 `[Oreo Blue]` kursor tema.
++ 🔵 `[Oreo Blue]` cursor theme.
 
-   Ova tema nam daje plavi izgled kursoru, ubačena je samo radi izgleda kursora i zato što se slaže sa svim ostalim bojama ovog operativnog sistema.
+   This theme gives us a blue cursor look; it was inserted just for the looks and because it matches all the other colours of this operating system.
 
++ 🔥🦊 `[Firefox]` web browser.
 
-+ 🔥🦊 `[Firefox]` web preglednik.
-
-   Firefox koristim jer je jedan od po mome mišljenu najboljih web preglednika koji je orijentisan ka privatnosti.
+   I use Firefox because it is one of the best privacy-oriented web browsers, in my opinion.
 
 
 + ⏰ `tty-clock` 
 
-   Tty-clock nam je aplikcija koja ima svrhu da u terminalu pokaže vrijeme i datum. 
+   Tty-clock is an application that aims to show the time and date in the terminal.
 
 + 🎚️ `CAVA` audio visualizer.
 
-   Cava nam je aplikacija koja služi kao audio vizualizator.
+   Cava is an application that serves as an audio visualizer.
 
 + 📈 `HTop` 
 
-   HTop aplikacija nam služi da prikaže koji procesori trenutno rade i koliko RAM memorije oni uzimaju kao i mnogo drugih stvari. Zamislite HTop kao Task Manager u Windows operativnom sistemu.
+  The HTop application shows which processors are currently running and how much RAM they are taking in, and many other things. Think of HTop as a Task Manager in Windows.
 
 + 😎 `CMatrix` 
 
-   CMatrix nam je aplikacija koja je ovdje samo radi izgleda i njezina svrha je da u otvorenom terminalu ispisuje neki text kojem je cilj da daje prikaz hakovanja iz filma Matrix-a. 
-
+   CMatrix is an application that is here just for looks, and its purpose is to print some text in an open terminal that aims to give a display of hacking from the Matrix movie.
 
 + 🤠 `Ranger` 
 
-   Ranger je aplikacija koja nam omogućava da u terminalu vidimo i pristupimo svim fajlovima na računaru. 
-
+   Ranger is an application that allows us to see and access all files on the computer in the terminal.
 
 + 🍭 `Lollypop` 
 
-   Lollypop je aplikacija za muziku, preko nje puštamo pjesme. 
+   Lollypop is a music app; we play songs through it.
 
 
 
 
-
-### Hvala puno na izdvojenom vremenu 💙
+### Thanks a lot for your time 💙
 
