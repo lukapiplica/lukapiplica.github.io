@@ -41,7 +41,7 @@ I finished [Željeznički školski centar](https://zsc.edu.ba/) with the title o
    During the second year, I had the opportunity to work with a group of classmates on the project "Arduino Scoreboard", which brought us won first place in the state competition (IX Festival rada) in Hadžići.
 
    <p align="center">
-      <img width="75%" src=".assets/scoreboard.jpg" />
+      <img width="75%" src="/assets/images/about/scoreboard.jpg" />
    </p>
 
    + The Arduino Scoreboard is made using an Arduino microcontroller, and a WiFi module that connects us to the HTML web page (which you can see on the laptop) and with it we control the numbers and time on the traffic light. The numbers are handmade from an LED strip that acts like seven-segment displays.
@@ -52,13 +52,13 @@ I finished [Željeznički školski centar](https://zsc.edu.ba/) with the title o
    During my third year, I learned to make my own PCB's as well as advanced knowledge about transistors. This year we had to make something for our final project, I had the opportunity to work on an audio amplifier project.
 
    <p align="center">
-      <img width="50%" src=".assets/audio.jpg" />
+      <img width="50%" src="/assets/images/about/audio.jpg" />
    </p>
    
    As in previous year, we participated in the X Festival rada, which was held in Zenica. As a project we had a solar tree which brought us first place.
 
    <p align="center">
-      <img width="50%" src=".assets/solarno.jpg" />
+      <img width="50%" src="/assets/images/about/solarno.jpg" />
    </p>
 
 
@@ -67,7 +67,7 @@ I finished [Željeznički školski centar](https://zsc.edu.ba/) with the title o
    In the final year, we mostly learned about telecommunications, where I had a topic about radio recievers for my final work. The project we worked on for the XI Festival rada is an LED desk programmed with an Arduino microcontroller to display patterns.
 
    <p align="center">
-      <img width="75%" src=".assets/ledtable.jpg" />
+      <img width="75%" src="/assets/images/about/ledtable.jpg" />
    </p>
    
    This project brought us the first place for the third year in a row.
@@ -79,7 +79,7 @@ After graduating from high school, I decided to continue my knowledge of informa
 
 
 <p align="center">
-   <img width="75%" src=".assets/thm.png" />
+   <img width="75%" src="/assets/images/about/thm.png" />
 </p>
 
 
