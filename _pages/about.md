@@ -5,7 +5,7 @@ title: "About Me"
 
 
 <p align="center">
-  <img width="50%" src=".assets/logo.png" />
+  <img width="50%" src="/assets/images/about/logo.png" />
 </p>
 
 <p align="center">
