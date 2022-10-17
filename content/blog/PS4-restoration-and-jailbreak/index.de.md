@@ -9,7 +9,7 @@ categories:
 
 
 <p align="center">
-  <img width="70%" src="images/1.webp" />
+  <img width="70%" src="1.webp" />
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@ categories:
 Ich habe eine gebrauchte PS4 Slim-Konsole gekauft, um damit zu spielen, und sie war mit **8.50**-Firmware ausgestattet und wurde nie innen gereinigt. Das erste, was ich tat, war, es zu öffnen, um zu sehen, was "unter der Haube" war. Als ich es öffnete, sah ich Staub und als ich es einschaltete, war die PS4 so laut. Das bedeutete, dass die Wärmeleitpaste ausgetauscht und die Lüfter gereinigt werden mussten. Hier ist ein Bild von dem, was drin war:
 
 <p align="center">
-    <img width="75%" src="images/2.webp">
+    <img width="75%" src="2.webp">
 </p>
 
 Ich hatte vor, Linux auf dieser PS4 zu installieren, aber das erfordert einen Jailbreak und eine bestimmte Firmware-Version, und deshalb habe ich es mit einer ausreichend niedrigen Firmware-Version gekauft, damit ich es auf **9.00** aktualisieren kann.
@@ -49,29 +49,29 @@ Was brauchen Sie:
 Zuerst öffnete ich die PS4, löste einige Schrauben und so sah das Innere aus:
 
 <p align="center">
-    <img width="75%" src="images/3.webp">
+    <img width="75%" src="3.webp">
 </p>
 
 <p align="center">
-    <img width="75%" src="images/4.webp">
+    <img width="75%" src="4.webp">
 </p>
 
 Jetzt benutze ich Franzbranntwein, um die alte Wärmeleitpaste loszuwerden.
 
 <p align="center">
-    <img width="75%" src="images/5.webp">
+    <img width="75%" src="5.webp">
 </p>
 
 Die neue Wärmeleitpaste, die ich aufgetragen habe, ist Arctic MX-4. 
 
 <p align="center">
-    <img width="75%" src="images/6.webp">
+    <img width="75%" src="6.webp">
 </p>
 
 Nach der Reinigung des Lüfters und des Kühlkörpers sieht das Ergebnis so aus:
 
 <p align="center">
-    <img width="75%" src="images/7.webp">
+    <img width="75%" src="7.webp">
 </p>
 
 Viel besser !
@@ -87,7 +87,7 @@ Viel besser !
 + Gehen Sie nun zu **Einstellungen/System/Systeminformationen** und sehen Sie sich Ihre Firmware-Version an. Ich habe die Version 8.50, also muss ich meine PS4 manuell auf 9.00 aktualisieren. 
 
 <p align="center">
-    <img width="75%" src="images/8.webp">
+    <img width="75%" src="8.webp">
 </p>
 
 ## Aktualisieren der PS4 auf 9.00
@@ -140,7 +140,7 @@ Viel besser !
 ### Endergebnis 
 
 <p align="center">
-    <img width="100%" src="images/9.webp">
+    <img width="100%" src="9.webp">
 </p>
 
 ## Schlussfolgerung
