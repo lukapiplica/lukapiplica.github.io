@@ -8,7 +8,7 @@ description: "Über mich Seite"
 
 
 <p align="center">
-  <img width="75%" src="/images/logo.webp" />
+  <img width="75%" src="./images/logo.webp" />
 </p>
 
 <p align="center">
