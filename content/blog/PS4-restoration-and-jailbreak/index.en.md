@@ -23,7 +23,7 @@ categories:
 I bought a used PS4 Slim console to play with, and it was on **8.50** firmware and was never cleaned inside. The first thing I did was open it up to see what was "under the hood." When I opened it up, I saw dust and when I turned it on the PS4 was soo loud. That meant the thermal paste needed to be replaced, and the fans needed to be cleaned. Here is a picture of what was inside:
 
 <p align="center">
-    <img width="75%" src="images/2.webp">
+    <img width="75%" src="2.webp">
 </p>
 
 I planned on installing Linux on this PS4, but that requires a jailbreak and a specific firmware version, and that is why I bought it with a low enough firmware version so I can upgrade it to **9.00**. 
