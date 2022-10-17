@@ -9,7 +9,7 @@ categories:
 
 
 <p align="center">
-  <img width="70%" src="images/1.webp" />
+  <img width="70%" src="1.webp" />
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@ categories:
 Kupio sam rabljenu PS4 Slim konzolu za igranje, a bila je na firmware-u **8.50** i nikada nije bila očišćena iznutra. Prvo što sam učinio je da sam ga otvorio da vidim što je "ispod haube". Kad sam ga otvorio, vidio sam prašinu i kad sam ga uključio, PS4 je bio jako glasan. To je značilo da treba zamijeniti termalnu pastu i očistiti ventilatore. Evo slike onoga što je bilo unutra:
 
 <p align="center">
-    <img width="75%" src="images/2.webp">
+    <img width="75%" src="2.webp">
 </p>
 
 Planirao sam instalirati Linux na ovaj PS4, ali to zahtijeva Jailbreak i određenu verziju firmvera, i zato sam ga kupio s dovoljno niskom verzijom firmvera da ga mogu nadograditi na **9.00**. 
@@ -45,29 +45,29 @@ Planirao sam instalirati Linux na ovaj PS4, ali to zahtijeva Jailbreak i određe
 Prvo sam otvorio PS4, odvrnuo neke vijke i ovako je izgledala unutrašnjost:
 
 <p align="center">
-    <img width="75%" src="images/3.webp">
+    <img width="75%" src="3.webp">
 </p>
 
 <p align="center">
-    <img width="75%" src="images/4.webp">
+    <img width="75%" src="4.webp">
 </p>
 
 Sada koristim alkohol da se riješim stare termalne paste.
 
 <p align="center">
-    <img width="75%" src="images/5.webp">
+    <img width="75%" src="5.webp">
 </p>
 
 Nova termalna pasta koju sam nanio je Arctic MX-4.
 
 <p align="center">
-    <img width="75%" src="images/6.webp">
+    <img width="75%" src="6.webp">
 </p>
 
 Nakon čišćenja ventilatora i hladnjaka rezultat izgleda ovako:
 
 <p align="center">
-    <img width="75%" src="images/7.webp">
+    <img width="75%" src="7.webp">
 </p>
 
 Puno bolje !
@@ -83,7 +83,7 @@ Puno bolje !
 + Sada idite na **Postavke/Sustav/Informacije o sustavu** i pogledajte svoju verziju firmvera. Imam verziju 8.50, pa moram ručno ažurirati svoj PS4 na 9.00.
 
 <p align="center">
-    <img width="75%" src="images/8.webp">
+    <img width="75%" src="8.webp">
 </p>
 
 ## Ažuriranje PS4 na 9.00
@@ -136,7 +136,7 @@ Puno bolje !
 ### Konačni rezultat
 
 <p align="center">
-    <img width="100%" src="images/9.webp">
+    <img width="100%" src="9.webp">
 </p>
 
 ## Zaključak
