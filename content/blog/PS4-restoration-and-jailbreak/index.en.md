@@ -136,7 +136,7 @@ Much better !
 ### Final result 
 
 <p align="center">
-    <img width="100%" src="images/9.webp">
+    <img width="100%" src="/9.webp">
 </p>
 
 ## Conclusion
