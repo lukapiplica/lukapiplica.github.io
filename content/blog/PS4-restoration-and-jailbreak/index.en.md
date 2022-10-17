@@ -9,7 +9,7 @@ categories:
 
 
 <p align="center">
-  <img width="70%" src="images/1.webp" />
+  <img width="70%" src="1.webp" />
 </p>
 
 <p align="center">
@@ -45,29 +45,29 @@ What do you need:
 Firstly I opened the PS4 up, unscrewed some screws, and this is what the insides looked like: 
 
 <p align="center">
-    <img width="75%" src="images/3.webp">
+    <img width="75%" src="3.webp">
 </p>
 
 <p align="center">
-    <img width="75%" src="images/4.webp">
+    <img width="75%" src="4.webp">
 </p>
 
 Now I use rubbing alcohol to get rid of the old thermal paste. 
 
 <p align="center">
-    <img width="75%" src="images/5.webp">
+    <img width="75%" src="5.webp">
 </p>
 
 The new thermal paste I applied is Arctic MX-4. 
 
 <p align="center">
-    <img width="75%" src="images/6.webp">
+    <img width="75%" src="6.webp">
 </p>
 
 After cleaning the fan and the heatsink, this is what the result looks like: 
 
 <p align="center">
-    <img width="75%" src="images/7.webp">
+    <img width="75%" src="7.webp">
 </p>
 
 Much better !
@@ -83,7 +83,7 @@ Much better !
 + Now go to **Settings/System/System Information** and see your firmware version. I have the 8.50 version, so I need to update my PS4 to 9.00 manually. 
 
 <p align="center">
-    <img width="75%" src="images/8.webp">
+    <img width="75%" src="8.webp">
 </p>
 
 ## Updating the PS4 to 9.00
